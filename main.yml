@@ -29,8 +29,8 @@
       default: 2 
 
   roles:
-    - { role: common , tags: "common"}   # 预安装
-    # - {role: ...,tags: "..."}
+    - { role: common , tags: "common"} 
+    - { role: end , tags: "end"} 
 
 
 
