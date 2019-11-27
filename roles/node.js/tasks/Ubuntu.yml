@@ -12,3 +12,17 @@
     name: nodejs
     update_cache: yes
     
+- name:  Add yarn an Apt signing key
+  apt_key:
+    url: https://dl.yarnpkg.com/debian/pubkey.gpg
+
+- name:  Import yarn repo
+  apt_repository:
+    repo: deb https://dl.yarnpkg.com/debian/ stable main
+    filename: yarn
+
+- name: Install Yarn
+  apt:
+    name: yarn
+    update_cache: true
+   
