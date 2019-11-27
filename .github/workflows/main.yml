@@ -21,7 +21,6 @@ jobs:
       env:
         CI: true
     
-        
     - name: Git Push
       run: |
         cd docs
