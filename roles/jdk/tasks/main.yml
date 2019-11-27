@@ -1,0 +1,12 @@
+- import_tasks: CentOS.yml
+  when: ansible_distribution == 'CentOS'
+
+- import_tasks: Ubuntu.yml
+  when: ansible_distribution == 'Ubuntu'
+
+
+- name: Check JAVA Version
+  shell: java -version
+  register: jdk_ver
+  notify: JAVA Version
+
