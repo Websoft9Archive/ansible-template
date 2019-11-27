@@ -18,8 +18,7 @@ roles 结构
  - defaults: 保存当前roles默认变量
 
 group_vars 结构
-  - local.yml: local本地变量(一般不需要进行修改)
-  - example.yml: 当前playbook变量
+ - all.yml: 组变量
 
 
 roles 编写注意事项:
