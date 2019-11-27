@@ -29,8 +29,9 @@
       default: 2 
 
   roles:
-    - { role: common , tags: "common"} 
-    - { role: end , tags: "end"} 
+    # - { role: common , tags: "common"} 
+    # - { role: end , tags: "end"} 
+    - {role: wkhtmltopdf}
 
 
 
