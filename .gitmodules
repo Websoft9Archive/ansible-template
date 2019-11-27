@@ -1,4 +1,0 @@
-[submodule "roles"]
-	path = roles
-	url = https://github.com/websoft9/ansible-roles
-	branch = master
