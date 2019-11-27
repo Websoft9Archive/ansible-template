@@ -1,3 +1,4 @@
+#
 - name: Check Cloud
   shell: echo "{{ansible_kernel}}" | awk -F '-' '{print $3}'
   register: cloud
