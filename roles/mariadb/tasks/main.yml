@@ -8,8 +8,12 @@
 - name: Change MariaDB root user password 
   mysql_user: 
     name: root 
-    host: localhost
+    host: '{{item}}'
     password: "{{mariadb_password}}"
+    with_items: 
+      - 127.0.0.1
+      - ::1
+      - localhost
 
 - name: Removes all anyelse user accounts
   mysql_user:
