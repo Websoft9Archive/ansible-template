@@ -29,10 +29,10 @@
       default: 2 
 
   roles:
-    - { role: common , tags: "common"} 
+    # - { role: common , tags: "common"} 
+    - {role: php-fpm}
 
-    
-    - { role: end , tags: "end"} 
+    # - { role: end , tags: "end"} 
 
 
 
