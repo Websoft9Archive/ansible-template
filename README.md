@@ -1,7 +1,7 @@
 Playbook 主体结构
   - group_vars:组变量
   - roles:角色
-  - example.yml : playbook入口文件
+  - main.yml : playbook入口文件
 
 roles 结构
 
