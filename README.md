@@ -35,3 +35,24 @@ roles 编写注意事项:
 common 和 final 默认是空文件夹 运行是会从GitHub上clone下来,common 和 final 已经clone 则会更新,以保持最新
 
 **play编写尽量使用模块,少用shell,command等模块**
+
+
+
+**随机密码生成统一采用**
+
+  `pwgen -ncCs 10 1`
+
+```
+参数：
+-c or –capitalize
+密码中至少包含一个大写字母
+
+-n or –numerals
+密码中至少包含一个数字
+
+-C
+在列中打印生成的密码
+
+-s or –secure
+生成完全随机密码
+```

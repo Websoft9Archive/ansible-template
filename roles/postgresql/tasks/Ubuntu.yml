@@ -64,8 +64,7 @@
     - {src: '/var/log/postgresql',dest: /data/logs/postgresql}
 
 
-- name: populate service facts
-  service_facts:
+
 
 - name: Check PostgreSQL
   shell: psql -V
