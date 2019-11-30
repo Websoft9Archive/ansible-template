@@ -1,3 +1,3 @@
-- name: JAVA Version
+- name: Ruby Version
   debug:
-    var: jdk_ver
+    var: ruby_Ver.stdout

@@ -1,22 +1,11 @@
-# - import_tasks: CentOS.yml
-#   when: ansible_distribution == 'CentOS'
+- import_tasks: CentOS.yml
+  when: ansible_distribution == 'CentOS'
 
-# - import_tasks: Ubuntu.yml
-#   when: ansible_distribution == 'Ubuntu'
+- import_tasks: Ubuntu.yml
+  when: ansible_distribution == 'Ubuntu'
 
-# - name: Check JAVA Version
-#   shell: java -version
-#   register: jdk_ver
-#   notify: JAVA Version
+- name: Check ruby Version
+  shell: ruby
+  register: ruby_Ver
+  notify: Ruby Version
 
-- name: Install GPG keys
-  shell: gpg2 --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
-
-- name: Install RVM
-  shell: \curl -sSL https://get.rvm.io | bash -s stable
-
-- name: Install Ruby
-  shell: /usr/local/rvm/bin/rvm install {{ruby_ver}}
-
-- name: Set Default Version
-  shell: /usr/local/rvm/bin/rvm {{ruby_ver}} --default
