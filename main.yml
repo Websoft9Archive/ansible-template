@@ -9,8 +9,6 @@
       raw: sudo apt update && sudo apt-get -y install python
       ignore_errors: yes
   
-
-
 # 核心任务
 
 - name: main
@@ -23,8 +21,7 @@
     - {role: cloud,tags: "cloud"}
     - { role: end , tags: "end"} 
 
-
-
+  
 
     
 
