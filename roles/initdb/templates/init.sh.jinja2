@@ -1,0 +1,30 @@
+#!/bin/bash
+
+# 修改数据库密码(普通用户和管理员用户)
+Change_MySQL_Pass() {
+  # 普通用户和管理员用户密码保持一致 {{pass}}
+  mysqladmin -u{{root}} -p{{pass}} password $new_pass
+  mysqladmin -u{{user}} -p{{pass}} password $new_pass
+}
+
+new_pass=$(pwgen -ncCs 10 1)
+# 启动数据库服务
+systemctl start {{service_name}}
+#调用修改MySQL密码的函数
+Change_MySQL_Pass
+
+# 修改应用配置文件
+# ansible中变量config_path
+# config_path:
+#   - /data/wwwroot/1.config
+#   - /data/wwwroot/2.config
+
+{% for path in config_path %}
+sed -i "s/{{pass}}/$new_pass/" {{path}}
+sed -i "s/{{pass}}/$new_pass/g" /credentials/password.txt
+{% endfor %}
+
+# 删除开机启动配置和脚本本身
+systemctl restart {{app_server}}
+sed -i 's/\/root\/init.sh//g' /etc/rc.local
+rm -rf /root/init.sh
