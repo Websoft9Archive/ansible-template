@@ -56,3 +56,6 @@ common 和 final 默认是空文件夹 运行是会从GitHub上clone下来,commo
 -s or –secure
 生成完全随机密码
 ```
+
+
+
