@@ -41,14 +41,14 @@
 - name: Create DB
   mysql_db:
     login_user: root
-    login_password: '{{mysql_password}}'
+    login_password: '{{mariadb_password}}'
     name: "{{app_db}}"
   when: (app_db != none) and (app_db is defined)
 
 - name: Create User
   mysql_user:
     login_user: root
-    login_password: '{{mysql_password}}'
+    login_password: '{{mariadb_password}}'
     name: "{{app_db_user}}"
     password: "{{app_db_password}}"
     host: "{{app_db_host}}"
