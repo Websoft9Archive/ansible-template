@@ -17,6 +17,6 @@ app_db_host: 127.0.0.1
 db_service_name: mysqld
 
 # 数据库连接配置文件路径
-# config_path:
-#   - /root/1
-#   - /root/2
+db_config_path:
+  - /root/1
+  - /root/2
