@@ -6,13 +6,16 @@ systemctl start {{db_service_name}}
 {% if db_service_name == 'mysql' or db_service_name == 'mysqld' or db_service_name == 'mariadb' %}
 mysqladmin -uroot -p{{mysql_password}} password $new_pass
 {% if app_db_user != none %}
-mysqladmin -u{{app_db_user}} -p{{mysql_password}} password $new_pass
+mysqladmin -u{{app_db_user}} -p{{app_db_password}} password $new_pass
 {% endif %}
 {% endif %}
 
 {% if (db_config_path is defined ) and (db_config_path != none) %}
 {% for path in db_config_path %}
+
 sed -i "s/{{mysql_password}}/$new_pass/" {{path}}
+sed -i "s/{{app_db_password}}/$new_pass/" {{path}}
+
 {% endfor %}
 {% endif %}
 

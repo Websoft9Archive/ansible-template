@@ -18,10 +18,10 @@
     login_user: root
     login_password: '{{mysql_password}}'
     name: "{{app_db_user}}"
-    password: "{{mysql_password}}"
+    password: "{{app_db_password}}"
     host: "{{app_db_host}}"
     priv: '{{app_db}}.*:ALL,GRANT'
-  when: (app_db_user != none) and (app_db_host != none) and (app_db != none) and (app_db_user is defined) and (app_db_host is defined) and (app_db is defined)
+  when: (app_db_user != none) and (app_db_host != none) and (app_db != none) and (app_db_user is defined) and (app_db_host is defined) and (app_db is defined)and (app_db_password != none) and (app_db_password is defined)
 
 
 - name: Create credentials Folder

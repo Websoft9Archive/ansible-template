@@ -12,11 +12,12 @@ redis_ver: stable #默认版本 stable  全版本支持 版本信息查看http:/
 # 额外数据库相关,
 app_db: ansible
 app_db_user: ansible
+app_db_password: password
 app_db_host: 127.0.0.1
 
 db_service_name: mysqld
 
-# 数据库连接配置文件路径
+# 数据库连接配置文件路径X
 db_config_path:
   - /root/1
   - /root/2
