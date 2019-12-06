@@ -27,7 +27,7 @@
 
   - name: pip pexpect
     pip:
-      name: pexpect
+      name: [pexpect,docker]
 
   - name: Configuration yum-cron
     copy: src=yum-cron.conf dest=/etc/yum/
