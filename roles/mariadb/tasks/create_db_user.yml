@@ -1,0 +1,8 @@
+- name: Create User
+  mysql_user:
+    login_user: root
+    login_password: '{{mariadb_password}}'
+    name: "{{app_db_user}}"
+    password: "{{app_db_password}}"
+    host: "{{app_db_host}}"
+    priv: '{{app_db}}.*:ALL,GRANT'
