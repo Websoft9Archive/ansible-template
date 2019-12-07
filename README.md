@@ -59,3 +59,62 @@ common 和 final 默认是空文件夹 运行是会从GitHub上clone下来,commo
 
 
 
+### 数据库额外变量(用与创建数据库和用户)
+```
+额外创建的数据库用户
+extra_db_user
+
+额外创建的数据库
+extra_db
+
+额外创建的数据库密码
+extra_db_password
+
+mysql role 判断以上变量是否有值和变量是否定义,未定义变量或者变量未赋值将不会创建用户或者数据库 password.txt 模板将不会保存额外创建的数据库/用户/密码等信息
+```
+
+
+说明:  项目入口处加入变量
+
+```
+- name: main
+  hosts: all
+  become: yes
+  become_method: sudo
+  become_user: root
+  vars:
+    extra_db_user: db_user
+    extra_db: db_name
+    extra_db_password: db_pass
+
+
+```
+
+
+### 如应用自己创建数据库或数据库用户,可以参考一下方式获取数据库信息,然后赋值变量
+
+```
+# 获取数据库名称,并存放在注册变量
+- name: Get DB Name
+  shell: cat /xx/xxx/xx
+  register: db_name
+
+# 获取数据库用户称,并存放在注册变量
+- name: Get DB User
+  shell: cat /xx/xxx/xx
+  register: db_user
+
+# 获取数据库用户密码,并存放在注册变量
+- name: Get DB pass
+  shell: cat /xx/xxx/xx
+  register: db_pass
+
+# 将注册变量重新赋值,以供项目中password.txt以及后面的initdb role使用
+- set_fact:
+    extra_db_user: '{{db_name.stdout}}'
+    extra_db: '{{db_user.stdout}}'
+    extra_db_password: '{{db_pass.stdout}}'
+
+
+
+```
