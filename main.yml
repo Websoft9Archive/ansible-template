@@ -15,10 +15,15 @@
   hosts: all
   become: yes
   become_method: sudo
+  vars:
+    extra_db_user: db_user
+    extra_db: db_name
+    extra_db_password: db_pass
 
   roles:
     - {role: common , tags: "common"}
     - {role: cloud,tags: "cloud"}
+    - {role: mariadb,tags: "mariadb",mariadbver: 10.4}
     - { role: end , tags: "end"} 
 
   
