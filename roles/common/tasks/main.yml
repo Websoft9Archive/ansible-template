@@ -25,7 +25,7 @@
       name: pip
       extra_args: --upgrade
 
-  - name: pip pexpect
+  - name: pip requirements
     pip:
       name: [pexpect,docker]
 
