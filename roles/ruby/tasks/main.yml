@@ -6,6 +6,6 @@
 
 - name: Check ruby Version
   shell: ruby
-  register: ruby_Ver
+  register: ruby_ver
   notify: Ruby Version
 

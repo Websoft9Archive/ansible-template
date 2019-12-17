@@ -4,7 +4,7 @@
 
 - name: Install Ruby
   apt:
-    name: ['ruby{{ruby_ver}}','ruby{{ruby_ver}}-dev']
+    name: ['ruby{{ruby_version}}','ruby{{ruby_version}}-dev']
 
 - name: Install Bundler
   gem:
