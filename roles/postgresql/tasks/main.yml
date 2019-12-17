@@ -1,3 +1,7 @@
+- name: Install psycopg2
+  pip:
+    name: psycopg2-binary
+    
 - import_tasks: CentOS.yml
   when: ansible_distribution == 'CentOS'
 

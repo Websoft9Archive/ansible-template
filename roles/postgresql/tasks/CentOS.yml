@@ -11,10 +11,6 @@
     name: ["postgresql{{psqlver.stdout}}","postgresql{{psqlver.stdout}}-server"]
     state: latest
 
-- name: Install psycopg2
-  pip:
-    name: psycopg2-binary
-
 - name: Create Databases Directory
   file:
     path: /data/pgsql

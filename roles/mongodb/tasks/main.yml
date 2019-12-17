@@ -5,8 +5,6 @@
 - import_tasks: Ubuntu.yml
   when: ansible_distribution == 'Ubuntu'
 
-
-
 - name: Install pymongo
   pip:
     name: pymongo
