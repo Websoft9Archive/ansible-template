@@ -5,7 +5,7 @@
   when: ansible_distribution == 'Ubuntu'
 
 - name: Check ruby Version
-  shell: ruby
+  shell: ruby -v
   register: ruby_ver
   notify: Ruby Version
 

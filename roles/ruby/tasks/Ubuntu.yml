@@ -9,6 +9,7 @@
 - name: Install Bundler
   gem:
     name: [bundler]
+    state: latest
 
   
     
