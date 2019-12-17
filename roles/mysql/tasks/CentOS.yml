@@ -9,7 +9,12 @@
 
 - name: Install MySQL{{ mysqlver }}
   yum: 
-    name: [mysql-community-server,MySQL-python]
+    name: [mysql-community-server,mysql-devel]
+
+- name: pip requirements
+  pip:
+    name: [MySQL-python]
+
 
 - name: Create Databases Directory
   file:

@@ -10,7 +10,7 @@
 
 - name: Install MariaDB
   apt:  
-    name: [mariadb-server,mariadb-client,mariadb-backup,mariadb-common]
+    name: [mariadb-server,mariadb-client,mariadb-backup,mariadb-common,libmariadb-dev]
 
 - name: config MariaDB
   template:

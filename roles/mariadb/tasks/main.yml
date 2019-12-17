@@ -1,12 +1,13 @@
-- name: pip requirements
-  pip:
-    name: [MySQL-python]
-
 - import_tasks: CentOS.yml
   when: ansible_distribution == 'CentOS'
 
 - import_tasks: Ubuntu.yml
   when: ansible_distribution == 'Ubuntu'
+
+
+- name: pip requirements
+  pip:
+    name: [MySQL-python]
 
 
 - name: Change MariaDB root user password 

@@ -1,7 +1,11 @@
 ---
 - name: Install MySQL
   apt:  
-    name: mysql-server
+    name: [mysql-server,libmysqlclient-dev]
+
+- name: pip requirements
+  pip:
+    name: [MySQL-python]
 
 - name: Change MySQL Directory
   shell: |
