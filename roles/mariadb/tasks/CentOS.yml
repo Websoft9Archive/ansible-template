@@ -10,7 +10,7 @@
 
 - name: Install MariaDB
   yum: 
-    name: [MariaDB-server,MariaDB-client,MariaDB-devel]
+    name: [MariaDB-server,MariaDB-client,MySQL-python]
 
 - name: Create Databases Directory
   file:
