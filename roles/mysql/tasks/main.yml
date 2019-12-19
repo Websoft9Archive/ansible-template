@@ -5,21 +5,9 @@
   when: ansible_distribution == 'Ubuntu'
 
 
-- name: Create credentials Folder
-  file:
-    path: /credentials
-    state: directory
-
-- name: Write Databases Password
-  template:
-    src: password.txt.jinja2
-    dest: /credentials/password.txt
-    mode: 644
-
 - name: Check MySQL Version
   shell: mysql -V
   register: mysql_ver
   notify: MySQL Version
 
 
-    
