@@ -15,11 +15,13 @@
   hosts: all
   become: yes
   become_method: sudo
-  vars:
-    mysql_root_password: 
+  vars_files:
+    - variables.yml
 
+  vars:
+    mysql_users: wordpress
 
   roles:
-    # - {role: common , tags: "common"}
-    - {role: mysql,tags: "mysql",mysql_version: 5.7}
+    - {role: common , tags: "common"}
+    - {role: mysql,tags: "mysql",mysql_version: 5.7,}
     - {role: initdb}

@@ -55,7 +55,3 @@
   with_items:
     - {src: '/etc/mysql/mysql.conf.d/mysqld.cnf',dest: /data/config/mysqld.cnf}  
     - {src: '/var/log/mysql',dest: '/data/logs/mysqld'}
-
-
-- set_fact:
-    db_service_name: mysql
