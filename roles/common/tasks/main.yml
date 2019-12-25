@@ -52,9 +52,7 @@
 
 
 - name: Pip Update
-  pip:
-    name: pip
-    extra_args: --upgrade
+  shell: python -m pip install --upgrade pip
 
 - name: pip requirements
   pip:
