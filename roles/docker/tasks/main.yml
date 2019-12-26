@@ -40,7 +40,7 @@
 
 - name: pip requirements
   pip:
-    name: [docker]
+    name: [docker,docker-compose]
 
 - name: Started Docker
   service:
