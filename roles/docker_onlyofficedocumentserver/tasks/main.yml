@@ -5,13 +5,14 @@
 
 - name: Create certs directory
   file:
-    path: /app/onlyoffice/DocumentServer/data/certs
+    path: /data/certs/onlyoffice_DocumentServer
     state: directory
 
 - name: Copy certificate to certs directory
   copy:
     src: "{{item}}"
-    dest: /app/onlyoffice/DocumentServer/data/certs
+    dest: /data/certs/onlyoffice_DocumentServer
+    mode: 0400
   with_items:
     - onlyoffice.crt
     - onlyoffice.csr
@@ -27,12 +28,9 @@
       - "9002:80"
       - "9003:443"
     volumes: 
-      - /app/onlyoffice/DocumentServer/logs:/var/log/onlyoffice
-      - /app/onlyoffice/DocumentServer/data:/var/www/onlyoffice/Data
-      - /app/onlyoffice/DocumentServer/lib:/var/lib/onlyoffice 
-      - /app/onlyoffice/DocumentServer/db:/var/lib/postgresql
+      - /data/certs/onlyoffice_DocumentServer:/var/www/onlyoffice/Data/certs
+      - /data/logs/onlyoffice_DocumentServer:/var/log/onlyoffice
+      - /data/wwwroot/onlyoffice_DocumentServer/data:/var/www/onlyoffice/Data
+      - /data/wwwroot/onlyoffice_DocumentServer/lib:/var/lib/onlyoffice 
+      - /data/onlyoffice_DocumentServer_postgresql:/var/lib/postgresql
 
-- name: change permission of onlyoffice.key
-  file:
-    path: /app/onlyoffice/DocumentServer/data/certs/onlyoffice.key
-    mode: 0400
