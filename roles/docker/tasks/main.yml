@@ -19,7 +19,7 @@
 - block:
   - name: Install required packages
     apt:
-      name: [apt-transport-https,ca-certificates,curl,gnupg-agent,software-properties-common,python-pip,python-setuptools]
+      name: [apt-transport-https,ca-certificates,curl,gnupg-agent,software-properties-common]
     
 
   - name:  Add Docker’s official GPG key
@@ -52,3 +52,7 @@
   shell: docker -v
   register: docker_ver
   notify: Docker Version
+
+
+
+#!/usr/bin/env python

@@ -17,7 +17,7 @@
 
   - name: Install Common Software
     yum: 
-      name: [mosh,yum-utils,wget,openssl,unzip,bzip2,expect,at,vim, screen,pwgen,git, htop, yum-cron,ImageMagick, goaccess,python-pip,inotify-tools,python-devel]
+      name: [mosh,yum-utils,wget,openssl,unzip,bzip2,expect,at,vim, screen,pwgen,git, htop, yum-cron,ImageMagick, goaccess,inotify-tools]
       state: installed
     
   - name: Configuration yum-cron
@@ -40,7 +40,7 @@
 
   - name: Install Common Software
     apt: 
-      name: [mosh,curl,gnupg2,ca-certificates,lsb-release,wget,openssl,unzip,bzip2,expect,at,vim,screen,pwgen,git,htop,imagemagick,goaccess,python-pip,python3-pip,unattended-upgrades,python-dev,python3-dev]
+      name: [mosh,curl,gnupg2,ca-certificates,lsb-release,wget,openssl,unzip,bzip2,expect,at,vim,screen,pwgen,git,htop,imagemagick,goaccess,unattended-upgrades]
       state: latest
       force_apt_get: True
       allow_unauthenticated: yes
@@ -52,7 +52,7 @@
 
 
 - name: Pip Update
-  shell: python -m pip install --upgrade pip
+  shell: python3 -m pip install --upgrade pip
 
 - name: pip requirements
   pip:
