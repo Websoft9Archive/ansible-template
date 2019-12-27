@@ -4,6 +4,11 @@
 - import_tasks: Ubuntu.yml
   when: ansible_distribution == 'Ubuntu'
 
+
+- name: Install PyMySQL 
+  pip:
+    name: PyMySQL 
+
 - name: Change MariaDB root user password 
   mysql_user: 
     name: root 
