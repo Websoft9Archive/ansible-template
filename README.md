@@ -20,3 +20,8 @@ main.yml Playbook入口
 requirements.yml  依赖文件,存放所需role仓库地址
  > 将项目需要的 role 仓库地址写入该文件
 
+
+
+*注意:*
+
+roles 目录内模块化的role保持默认 role_xxx的命名,该项目所需要的编写的role 直接以项目名称命名以示区分
