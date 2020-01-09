@@ -1,3 +1,7 @@
+
+# 以下内容作废,经过测试后重新编写
+
+
 Playbook 主体结构
   - group_vars:组变量
   - roles:角色
