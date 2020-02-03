@@ -1,3 +1,0 @@
-- name: JAVA Version
-  debug:
-    var: jdk_ver
