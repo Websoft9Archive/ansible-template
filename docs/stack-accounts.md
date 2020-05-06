@@ -1,13 +1,20 @@
 # Username and Password
 
+You use the **SSH** to connect your Server and run the command `cat /credentials/password.txt` to get the username and password of this deployment solution.
+
 These accounts are required for RabbitMQ image installation and configuration
 
 ## RabbitMQ
 
-RabbitMQ administrator username: `admin`  
-RabbitMQ administrator password: `admin` or stored in the file of your server instance: */credentials/password.txt*  
+* RabbitMQ administrator username: `admin`
+* RabbitMQ administrator password: stored in the file of your server */credentials/password.txt*
+  > If there no password.txt exist, the administrator password is `admin`
 
-You use the **SSH** and run the command `cat /credentials/password.txt` to get the password
+## MySQL
+
+* MySQL administrator username: `root`
+* MySQL administrator password: stored in the file of your server */credentials/password.txt*  
+  ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/common/catdbpassword-websoft9.png)
 
 ## Linux
 
@@ -22,4 +29,4 @@ You use the **SSH** and run the command `cat /credentials/password.txt` to get t
    |  AWS Ubuntu   |  ubuntu   | [How to enable root access?](https://support.websoft9.com/docs/aws/server-login.html#sample2-enable-the-root-username) |
    |  Alibaba Cloud, HUAWEI CLOUD, Tencent Cloud |  root   |
 
-If don't remember the password of Linux, you should reset password on Cloud Console
+   > If don't remember the password of Linux, you should reset password on Cloud Console

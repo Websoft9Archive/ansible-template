@@ -4,20 +4,6 @@ The RabbitMQ deployment package contains a sequence software (referred to as "co
 
 ## Path
 
-You can check the file path by the cmd `whereis` of RabbitMQ, and we have prepared more detail for your reference
-
-```shell
-whereis rabbitmq-server
-whereis erlang
-
-#For Centos&Redhat
-rpm -ql rabbitmq-server
-rpm -ql erlang
-
-#For Ubuntu&Debian
-dpkg -L rabbitmq-server
-```
-
 ### RabbitMQ
 
 RabbitMQ installation directory:  */data/rabbitmq*  
@@ -45,6 +31,9 @@ You can run the cmd `netstat -tunlp` to list all used ports, and we list the fol
 You can see the version from product page of Marketplace. However, after being deployed to your server, the components will be automatically updated, resulting in a certain change in the version number. Therefore, the exact version number should be viewed by running the command on the server:
 
 ```shell
+# Check all components version
+sudo cat /data/logs/install_version.txt
+
 # Linux Version
 lsb_release -a
 

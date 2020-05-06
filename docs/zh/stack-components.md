@@ -35,7 +35,7 @@ Erlang 安装目录： */data/erlang*
 
 ```shell
 # Check all components version
-cat /data/logs/install_version.txt
+sudo cat /data/logs/install_version.txt
 
 # Linux Version
 lsb_release -a
