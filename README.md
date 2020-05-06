@@ -1,44 +1,86 @@
-### 该仓库作为ansible-playbook模板使用
 
-Playbook 主体结构
-  - group_vars:组变量
-  - roles:角色
-  - main.yml : playbook入口文件
+本模板的使用，请参考[模板说明](template.md)
 
-group_vars 结构
- - all.yml: 组变量
+--- 以下为项目的Readme部分 ---
 
-变量注意事项:
-  1. 变量优先级 -e 选项指定的变量 > group_vars > inventory 主机清单中定义的变量 > play剧本中vars
-  2. roles中的变量修改使用优先级覆盖,使用-e参数以及group_vars,保持roles变量默认
-  3. remote_user 变量 默认root,为了适应aws和azure,使用-e覆盖[-e remote_user=ubuntu]
+# Redis 自动化安装与部署
 
-common 和 final 默认是空文件夹 运行是会从GitHub上clone下来,common 和 final 已经clone 则会更新,以保持最新
+本项目是由 [Websoft9](https://www.websoft9.com) 研发的 [Redis](https://redis.io/) 自动化安装程序，开发语言是 Ansible。使用本项目，只需要用户在 Linux 上运行一条命令，即可自动化安装 Redis，让原本复杂的安装过程变得没有任何技术门槛。  
 
-**play编写尽量使用模块,少用shell,command等模块**
+本项目是开源项目，采用 LGPL3.0 开源协议。
 
-*目录结构说明:*
+## 配置要求
 
-.github 用于存放 GitHub Actions 配置
-   
-docs 用于存放文档
-   
-  
-roles 用于存放role目录
-   
-vars 存放变量
+安装本项目，确保符合如下的条件：
 
-   
-ansible.cfg 项目配置
- > 注意: 由于在Centos7中YUM/Dnf 等包管理工具没有获得python3模块的支持 interpreter_python需要指定python2为解析器;Ubuntu18.04/Centos8指定使用Python3作为解析器,如果项目需要考虑Ubuntu18.04和Centos7,优先将解析器设置为python2;目前发现 docker_compose modules 需要python3,如果多系统支持 docker_compose modules 考虑使用 shell modules实现
-    
-main.yml Playbook入口
-   
-requirements.yml  依赖文件,存放所需role仓库地址
- > 将项目需要的 role 仓库地址写入该文件
+| 条件       | 详情       | 备注  |
+| ------------ | ------------ | ----- |
+| 操作系统       | CentOS7.x, Ubuntu18.04, Amazon Linux2       |  可选  |
+| 公有云| AWS, Azure, 阿里云, 华为云, 腾讯云 | 可选 |
+| 私有云|  KVM, VMware, VirtualBox, OpenStack | 可选 |
+| 服务器配置 | 最低1核1G，安装时所需的带宽不低于10M |  建议采用按量100M带宽 |
+
+## 组件
+
+包含的核心组件为：可选 Redis2.8.24/3.0.7/3.2.13/4.0.14/5.0.7/stable 多个版本
+
+更多请见[参数表](/docs/zh/stack-components.md)
+
+## 本项目安装的是 Redis 最新版吗？
+
+本项目是下载[Redis源码](http://download.redis.io/releases/)，再通过编译安装。 启动安装后，安装过程会提示用户选择一个Redis版本。
+
+查看 [redis.yml](/redis.yml) 文件中版本选择的内容，来查看和维护具体的详细版本号
+
+```
+  vars_prompt:
+    - name: 'redis_version_number'
+      prompt: "\nPlease choose the number for Redis version [ 1/2/3/4/5/6 ] \n\n
+      1: Redis2.8.24\n
+      2: Redis3.0.7\n
+      3: Redis3.2.13\n
+      4: Redis4.0.14\n
+      5: Redis5.0.7\n
+      6: Redis-Latest\n"
+      private: no
+      default: 6
+  vars:
+    temp_ver:
+      '1': '2.8.24'
+      '2': '3.0.7'
+      '3': '3.2.13'
+      '4': '4.0.14'
+      '5': '5.0.7'
+      '6': 'stable'
+```
+
+Redis-Latest 是官方发布的最新Stable版本，但还没有形成正式的发行版  
+
+我们会定期检查版本准确性，并增加官方最新的stable版本，以保证用户可以顺利安装所需的Redis版本。
+
+## 安装指南
+
+以 root 用户登录 Linux，运行下面的**一键自动化安装命令**即可启动自动化部署。若没有 root 用户，请以其他用户登录 Linux 后运行 `sudo su -` 命令提升为 root 权限，然后再运行下面的脚本。
+
+```
+wget -N https://raw.githubusercontent.com/Websoft9/ansible-linux/master/scripts/install.sh; bash install.sh -r redis
+```
+
+脚本后启动，就开始了自动化安装，必要时需要用户做出交互式选择，然后耐心等待直至安装成功。
+
+**安装中的注意事项：**  
+
+1. 操作不慎或网络发生变化，可能会导致SSH连接被中断，安装就会失败，此时请重新安装
+2. 安装缓慢、停滞不前或无故中断，主要是网络不通（或网速太慢）导致的下载问题，此时请重新安装
+
+多种原因导致无法顺利安装，请使用我们在公有云上发布的 [Redis 镜像](https://apps.websoft9.com/redis) 的部署方式
 
 
+## 文档
 
-*注意:*
+文档链接：https://support.websoft9.com/docs/redis/zh
 
-roles 目录内模块化的role保持默认 role_xxx的命名,该项目所需要的编写的role 直接以项目名称命名以示区分
+## FAQ
+
+- 命令脚本部署与镜像部署有什么区别？请参考：[镜像部署-vs-脚本部署](https://support.websoft9.com/docs/faq/zh/bz-product.html#镜像部署-vs-脚本部署)
+- 本项目支持在 Ansible Tower 上运行吗？支持
