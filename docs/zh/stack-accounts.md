@@ -1,15 +1,19 @@
 # 账号密码
 
-使用RabbitMQ，可能会用到的几组账号密码如下：
+通过**SSH**连接云服务器，运行 `cat /credentials/password.txt` 命令，可以查看所有相关账号和密码
+
+下面列出可能需要用到的几组账号密码：
 
 ## RabbitMQ
 
-管理员账号: `admin`  
-管理员密码: `admin` 或 存储在您的服务器中的文件中 */credentials/password.txt*  
+* 管理员账号: `admin`
+* 管理员密码: `admin` 或 存储在您的服务器中的文件中 */credentials/password.txt*  
 
-运行 `cat /credentials/password.txt` 命令，可以查看其中内容  
+## MySQL
 
-> 本地浏览器访问：http://服务器公网IP:15672 即可打开RabbitMQ 控制台
+* 管理员账号：*`root`*
+* 管理员密码：存储在您的服务器指定文件中（ */credentials/password.txt* ）
+   ![运行cat命令](https://libs.websoft9.com/Websoft9/DocsPicture/zh/common/catdbpassword-websoft9.png)
 
 ## Linux
 

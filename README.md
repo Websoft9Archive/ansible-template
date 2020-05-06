@@ -3,9 +3,9 @@
 
 --- 以下为项目的Readme部分 ---
 
-# Redis 自动化安装与部署
+# RabbitMQ 自动化安装与部署
 
-本项目是由 [Websoft9](https://www.websoft9.com) 研发的 [Redis](https://redis.io/) 自动化安装程序，开发语言是 Ansible。使用本项目，只需要用户在 Linux 上运行一条命令，即可自动化安装 Redis，让原本复杂的安装过程变得没有任何技术门槛。  
+本项目是由 [Websoft9](https://www.websoft9.com) 研发的 [RabbitMQ](https://rabbitmq.io/) 自动化安装程序，开发语言是 Ansible。使用本项目，只需要用户在 Linux 上运行一条命令，即可自动化安装 RabbitMQ，让原本复杂的安装过程变得没有任何技术门槛。  
 
 本项目是开源项目，采用 LGPL3.0 开源协议。
 
@@ -20,50 +20,28 @@
 | 私有云|  KVM, VMware, VirtualBox, OpenStack | 可选 |
 | 服务器配置 | 最低1核1G，安装时所需的带宽不低于10M |  建议采用按量100M带宽 |
 
+更多请见 [官方 System requirement](https://www.rabbitmq.com/download.html)
+
 ## 组件
 
-包含的核心组件为：可选 Redis2.8.24/3.0.7/3.2.13/4.0.14/5.0.7/stable 多个版本
+包含的核心组件为：可选 RabbitMQ2.8.24/3.0.7/3.2.13/4.0.14/5.0.7/stable 多个版本
 
-更多请见[参数表](/docs/zh/stack-components.md)
+更多请见 [参数表](/docs/zh/stack-components.md)
 
-## 本项目安装的是 Redis 最新版吗？
+## 本项目安装的是 RabbitMQ 最新版吗？
 
-本项目是下载[Redis源码](http://download.redis.io/releases/)，再通过编译安装。 启动安装后，安装过程会提示用户选择一个Redis版本。
+本项目通过[RabbitMQ 官方仓库源](https://packagecloud.io/rabbitmq/rabbitmq-server/install)安装，每次安装均可保证为最新版本。
 
-查看 [redis.yml](/redis.yml) 文件中版本选择的内容，来查看和维护具体的详细版本号
+版本号，请通过[官方下载](https://www.rabbitmq.com/download.html)页面查看  
 
-```
-  vars_prompt:
-    - name: 'redis_version_number'
-      prompt: "\nPlease choose the number for Redis version [ 1/2/3/4/5/6 ] \n\n
-      1: Redis2.8.24\n
-      2: Redis3.0.7\n
-      3: Redis3.2.13\n
-      4: Redis4.0.14\n
-      5: Redis5.0.7\n
-      6: Redis-Latest\n"
-      private: no
-      default: 6
-  vars:
-    temp_ver:
-      '1': '2.8.24'
-      '2': '3.0.7'
-      '3': '3.2.13'
-      '4': '4.0.14'
-      '5': '5.0.7'
-      '6': 'stable'
-```
-
-Redis-Latest 是官方发布的最新Stable版本，但还没有形成正式的发行版  
-
-我们会定期检查版本准确性，并增加官方最新的stable版本，以保证用户可以顺利安装所需的Redis版本。
+我们会定期检查版本准确性，并测试此项目，以保证用户可以顺利安装所需的RabbitMQ版本。  
 
 ## 安装指南
 
 以 root 用户登录 Linux，运行下面的**一键自动化安装命令**即可启动自动化部署。若没有 root 用户，请以其他用户登录 Linux 后运行 `sudo su -` 命令提升为 root 权限，然后再运行下面的脚本。
 
 ```
-wget -N https://raw.githubusercontent.com/Websoft9/ansible-linux/master/scripts/install.sh; bash install.sh -r redis
+wget -N https://raw.githubusercontent.com/Websoft9/ansible-linux/master/scripts/install.sh; bash install.sh -r rabbitmq
 ```
 
 脚本后启动，就开始了自动化安装，必要时需要用户做出交互式选择，然后耐心等待直至安装成功。
@@ -73,12 +51,12 @@ wget -N https://raw.githubusercontent.com/Websoft9/ansible-linux/master/scripts/
 1. 操作不慎或网络发生变化，可能会导致SSH连接被中断，安装就会失败，此时请重新安装
 2. 安装缓慢、停滞不前或无故中断，主要是网络不通（或网速太慢）导致的下载问题，此时请重新安装
 
-多种原因导致无法顺利安装，请使用我们在公有云上发布的 [Redis 镜像](https://apps.websoft9.com/redis) 的部署方式
+多种原因导致无法顺利安装，请使用我们在公有云上发布的 [RabbitMQ 镜像](https://apps.websoft9.com/rabbitmq) 的部署方式
 
 
 ## 文档
 
-文档链接：https://support.websoft9.com/docs/redis/zh
+文档链接：https://support.websoft9.com/docs/rabbitmq/zh
 
 ## FAQ
 

@@ -2,3 +2,12 @@
   include: "{{ansible_os_family}}.yml"
 
 
+# Check version
+- block:
+  - name: Check RabbitMQ Version
+    shell: sudo sh -c "rabbitmqctl status | grep 'RabbitMQ version' 1>> /data/logs/install_version.txt"
+  
+  # migrate your string Erlang
+  - name: Check Erlang Version
+    shell: sudo sh -c 'echo "Erlang $(yum info erlang | grep Version | sed -n 1p)" 1>> /data/logs/install_version.txt'
+    when: ansible_os_family=="RedHat"
