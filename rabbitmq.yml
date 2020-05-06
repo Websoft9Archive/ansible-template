@@ -1,7 +1,7 @@
   
 # 核心任务
 
-- name: activemq
+- name: RabbitMQ
   hosts: all
   become: yes
   become_method: sudo
@@ -10,28 +10,28 @@
     - vars/main.yml
   
   vars_prompt:
-    - name: 'activemq_selection'
-      prompt: "Choose the ActiveMQ distribution \n
-      1: ActiveMQ 5 Classic\n
-      2: ActiveMQ Artemis\n"
+    - name: 'rabbitmq_selection'
+      prompt: "Choose the RabbitMQ distribution \n
+      1: RabbitMQ 5 Classic\n
+      2: RabbitMQ Artemis\n"
       private: no
       default: 1
 
   vars:
-    activemq_select:
+    rabbitmq_select:
       '1': "classic"
       '2': "artemis"
 
-    activemq_distribution: "{{activemq_select[activemq_selection]}}"
+    rabbitmq_distribution: "{{rabbitmq_select[rabbitmq_selection]}}"
   
   pre_tasks:
     - debug:
-        msg: Will install {{activemq_distribution}}
+        msg: Will install {{rabbitmq_distribution}}
 
   roles:
     - {role: role_common, tags: "role_common"}  
     - {role: role_cloud, tags: "role_cloud"}  
     - {role: role_jdk, tags: "role_jdk"}  
-    - {role: activemq, tags: "activemq"}
+    - {role: rabbitmq, tags: "rabbitmq"}
     - {role: role_preend, tags: "preend"}
     - {role: role_end, tags: "role_end"}
