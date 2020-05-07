@@ -91,3 +91,8 @@
     shell: sudo sh -c 'echo "Erlang $(yum info erlang | grep Version | sed -n 1p)" 1>> /data/logs/install_version.txt'
     when: ansible_os_family=="RedHat"
 
+# check service state
+- name: Check RabbitMQ Service
+  shell: systemctl status rabbitmq | grep Active*
+  register: check_rabbitmq_service
+  notify: check_rabbitmq_service
