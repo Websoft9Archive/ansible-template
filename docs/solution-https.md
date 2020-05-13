@@ -8,6 +8,10 @@ Jenkins deployment package has installed the SSL module of Nginx and open Certif
 
 If you want to use a free certificate, just run the one command `certbot` on your instance to start the HTTPS deployment.
 
+```
+sudo certbot
+```
+
 If you have applied for a commercial certificate, complete the HTTPS configuration in just three steps:
 
 1. Upload your certificate to the directory of your instance: */data/cert* 
