@@ -9,9 +9,19 @@ The RabbitMQ deployment package contains a sequence software (referred to as "co
 RabbitMQ installation directory:  */data/rabbitmq*  
 RabbitMQ logs directory:  */data/logs/rabbitmq*  
 
-### Erlang
+### Nginx
 
-Erlang installation directory:  */data/erlang*  
+Nginx vhost configuration file: */etc/nginx/conf.d/default.conf*    
+Nginx main configuration file: */etc/nginx/nginx.conf*   
+Nginx logs file: */var/log/nginx*  
+Nginx rewrite rules directory: */etc/nginx/conf.d/rewrite* 
+
+### MYSQL
+
+MySQL installation directory: */usr/local/mysql*  
+MySQL data directory: */data/mysql*  
+MySQL configuration file: */etc/my.cnf*    
+MySQL Web Management URL: *http://Internet IP/9panel*, get credential from [Username and Password](/stack-accounts.md)
 
 ## Ports
 
