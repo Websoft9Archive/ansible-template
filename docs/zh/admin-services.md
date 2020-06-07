@@ -2,7 +2,7 @@
 
 使用由Websoft9提供的 RabbitMQ 部署方案，可能需要用到的服务如下：
 
-## RabbitMQ
+### RabbitMQ
 
 ```shell
 sudo systemctl start rabbitmq-server
