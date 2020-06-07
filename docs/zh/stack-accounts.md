@@ -2,6 +2,8 @@
 
 通过**SSH**连接云服务器，运行 `cat /credentials/password.txt` 命令，可以查看所有相关账号和密码
 
+![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/common/catdbpassword-websoft9.png)
+
 下面列出可能需要用到的几组账号密码：
 
 ## RabbitMQ
