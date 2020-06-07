@@ -10,11 +10,21 @@ You can find the keywords **Failed** or **error** from the logs directory: `/dat
 
 #### RabbitMQ service can't start?
 
-1. Use the debug mode of `rabbitmq-server console` and you can see the errors
-   ```
-   rabbitmq-server console
-   ```
-2. Search the keywords **Failed** or **error** from logs: */data/logs/rabbitmq-server*
+Insufficient disk space, insufficient memory, and configuration file errors can make service could not be started  
+
+It is recommended to first check through the command.
+
+```shell
+# restart RabbitMQ service
+systemctl status rabbitmq
+journalctl -u rabbitmq
+
+# view disk space
+df -lh
+
+# view memory rate
+free -lh
+```
 
 #### Error in Chrome when modify password?
 
