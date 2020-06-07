@@ -20,7 +20,7 @@ df -lh
 # 查看内存使用
 free -lh
 
-# 查看数据库状态以日志
+# 查看服务状态和日志
 systemctl status rabbitmq
 journalctl -u rabbitmq
 ```
