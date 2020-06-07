@@ -10,12 +10,20 @@
 
 #### RabbitMQ服务无法启动？
 
-1. 以调试模式运行`rabbitmq-server console`，便可以查看启动状态和错误
-   ```
-   rabbitmq-server console
-   ```
-2. 打开日志文件：*/data/logs/rabbitmq-server*，检索 **failed** 关键词，分析错误原因
+数据库服务无法启动最常见的问题包括：磁盘空间不足，内存不足，配置文件错误。  
+建议先通过命令进行排查  
 
+```shell
+# 查看磁盘空间
+df -lh
+
+# 查看内存使用
+free -lh
+
+# 查看数据库状态以日志
+systemctl status rabbitmq
+journalctl -u rabbitmq
+```
 
 #### 在Chrome下修改密码后报错？
 
