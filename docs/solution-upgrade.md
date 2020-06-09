@@ -20,7 +20,7 @@ Run an update command to complete the system update:
 apt update && apt upgrade -y
 
 #For Centos&Redhat
-yum update -y
+yum update -y --skip-broken
 ```
 > This deployment package is preconfigured with a scheduled task for automatic updates. If you want to remove the automatic update, please delete the corresponding Cron
 
