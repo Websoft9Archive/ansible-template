@@ -17,7 +17,7 @@ RabbitMQ 完整的更新升级包括：系统级更新（操作系统和运行�
 apt update && apt upgrade -y
 
 #For Centos&Redhat
-yum update -y
+yum update -y --skip-broken
 ```
 > 本部署包已预配置一个用于自动更新的计划任务。如果希望去掉自动更新，请删除对应的Cron
 
