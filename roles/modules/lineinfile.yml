@@ -19,11 +19,3 @@
       dest: /etc/postgresql/{{postgresql_version}}/main/postgresql.conf
       regexp: "data_directory = '/var/lib/postgresql/{{postgresql_version}}/main'"
       state: absent
-      
- # 匹配regexp，如果找到，用line替换；找不到，什么都不做。
-- name: Change postgresql databases directory
-  lineinfile:
-      dest: /etc/postgresql/{{postgresql_version}}/main/postgresql.conf
-      regexp: "data_directory = '/var/lib/postgresql/{{postgresql_version}}/main'"
-      line: "data_directory = '/data/pgsql'"
-      insertafter: "this row"
