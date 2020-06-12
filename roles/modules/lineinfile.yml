@@ -20,11 +20,11 @@
       regexp: "data_directory = '/var/lib/postgresql/{{postgresql_version}}/main'"
       state: absent
 
-# 特殊字符的匹配，如[]，需要在前面加上\进行转义，否则无法进行正则匹配
+# 特殊字符的匹配，如"."，需要在前面加上\进行转义，否则无法进行正则匹配(#elasticsearch.hosts 本例为替换所有#elasticsearch.hosts开头的行)
 - name: elasticsearch.hosts
   lineinfile:
     path: /etc/kibana/kibana.yml
-    regexp: '#elasticsearch.hosts: \["http://localhost:9200"]'
+    regexp: '^#elasticsearch\.hosts'
     line: 'elasticsearch.hosts: ["http://localhost:9200"]'
     state: present
     backrefs: yes
