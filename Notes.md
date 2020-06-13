@@ -17,6 +17,7 @@ RabbitMQ是一款开源的MQ系统，它包含RabbitMQ-Server和RabbitMQ-Client�
 * 应用服务器：自带
 * 数据库：无
 * 依赖组件：Erlang
+* 服务器配置：最低1核2G
 * 其他：
 
 ## 安装说明
@@ -48,13 +49,6 @@ sudo apt-get update -y
 apt install erlang rabbitmq-server -y
 ```
 
-## 路径
-
-* 程序路径：/usr/lib/rabbitmq/lib/rabbitmq_server-*
-* 日志路径：/var/log/rabbitmq  
-* 配置文件路径：  
-* 其他...
-
 ## 配置
 
 安装完成后，需要依次完成如下配置
@@ -72,6 +66,13 @@ apt install erlang rabbitmq-server -y
     rabbitmqctl add_user admin admin
     rabbitmqctl set_user_tags admin administrator
 ```
+
+## 路径
+
+* 程序路径：/usr/lib/rabbitmq/lib/rabbitmq_server-*
+* 日志路径：/var/log/rabbitmq  
+* 配置文件路径：  
+* 其他...
 
 ## 账号密码
 
@@ -152,7 +153,3 @@ ls /usr/lib64/erlang
 #### 安装后是否需要创建普通用户？
 
 有，rabbitmq
-
-## 日志
-
-* 2020-04-14 完成CentOS安装研究
