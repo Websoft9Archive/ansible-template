@@ -1,6 +1,6 @@
 # 避免重复下载一个大的压缩文件包
 - name: Ansible check file exists
-  shell: ls /data/wwwroot/knowage | grep zip
+  shell: if [ ! $(ls /data/wwwroot/knowage | grep Knowage-*.sh) ]; then echo "need_download";else echo "downloaded";fi
   register: result
 
 - name: Download Knowage, it have 2G, need 10 minutes
@@ -9,7 +9,7 @@
     dest: "/data/wwwroot/knowage"
     remote_src: yes
     mode: 0750
-  when: not result
+  when: result.stdout == "need_download"
   
   
 
