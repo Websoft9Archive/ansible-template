@@ -3,6 +3,21 @@
   include: "{{ansible_os_family}}.yml"
 
 # configure RabbitMQ
+## set environment variable
+- block:
+  - name: Copy jdk_env to /etc/profile.d
+    template:
+      src: rabbitmq_env.sh
+      dest: '/etc/profile.d'
+      mode: 0640
+      
+- block:     
+  - name: Export ORACLE_HOME environment variable for this shell
+    shell: |
+      export ORACLE_BASE=/opt/oracle 
+      export ORACLE_HOME=/opt/oracle/product/18c/dbhomeXE
+      export ORACLE_SID=XE
+      export PATH=$PATH:$ORACLE_HOME/bin
 
 - name: Create rabbitmq User
   user:
