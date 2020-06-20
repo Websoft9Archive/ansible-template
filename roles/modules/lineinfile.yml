@@ -28,3 +28,22 @@
     line: 'elasticsearch.hosts: ["http://localhost:9200"]'
     state: present
     backrefs: yes
+
+# 循环替换，数据结构
+```
+mysql_configure_extras:
+  - name: innodb_buffer_pool_size
+    value: 2G
+  - name: innodb_log_file_size
+    value: 500M
+```
+- name: Create MySQL extra databases 
+  mysql_db:
+    login_user: root
+    login_password: '{{mysql_root_password}}'
+    name: "{{ item.name }}"
+    encoding: "{{ item.encoding | default('utf8mb4',true) }}"
+    state: "{{ item.state | default('present',true) }}"
+  with_items: "{{ mysql_databases }}"
+  when: (mysql_databases is defined) and (mysql_databases != none)
+
