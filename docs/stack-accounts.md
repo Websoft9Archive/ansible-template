@@ -16,7 +16,6 @@ These accounts are required for RabbitMQ image installation and configuration
 
 * MySQL administrator username: `root`
 * MySQL administrator password: stored in the file of your server */credentials/password.txt*  
-  ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/common/catdbpassword-websoft9.png)
 
 ## Linux
 
