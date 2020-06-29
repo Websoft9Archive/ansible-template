@@ -21,7 +21,7 @@ rabbitmq-server console
 
 #### 是否有可视化的数据库管理工具？
 
-有，内置phpMyAdmin，访问地址：*http://服务器公网IP/phpmyadmin*
+有，内置phpMyAdmin，访问地址：*http://服务器公网IP:9090*
 
 #### 如何禁止外界访问phpMyAdmin？
 
