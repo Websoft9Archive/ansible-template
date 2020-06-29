@@ -21,8 +21,6 @@ RabbitMQ domain name binding steps:
    {
    listen 80;
    server_name www.example.com;  # 此处修改为你的域名
-   index index.html index.htm index.php;
-   root  /data/wwwroot/www.example.com;
    ...
    }
    ```
