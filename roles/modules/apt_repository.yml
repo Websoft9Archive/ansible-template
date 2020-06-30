@@ -4,4 +4,6 @@
 - apt_repository:
     repo: deb http://archive.canonical.com/ubuntu $(lsb_release -cs) partner $(arch)
     repo: deb http://archive.canonical.com/ubuntu {{ansible_distribution_version}} partner {{ansible_machine}}
+    #http://mirror.centos.org/centos/6/os/x86_64/
+    repo: http://mirror.centos.org/centos/$releasever/os/$basearch/
     state: present
