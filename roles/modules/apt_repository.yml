@@ -1,0 +1,8 @@
+# Add specified repository into sources list.
+# $(lsb_release -cs) 变量转换成 bionic,xenial,focal等。有待进一步优化
+# $(arch) 变量转成 x86_64
+- apt_repository:
+    repo: deb http://archive.canonical.com/ubuntu $(lsb_release -cs) partner $(arch)
+    state: present
+
+
