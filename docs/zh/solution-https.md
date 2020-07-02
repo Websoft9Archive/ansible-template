@@ -6,15 +6,19 @@ RabbitMQ 预装包，已安装Web服务器 SSL 模块和公共免费证书方案
 
 > 除了虚拟主机配置文件之外，HTTPS设置无需修改Nginx任何文件
 
-## 快速参考
+## 快速指南
 
-如果你想使用免费证书，只需在服务器中运行一条命令`certbot`就可以启动证书部署
+### 自动部署
+
+如果你想使用免费证书并实现自动化部署 HTTPS，只需在服务器中运行一条命令 `sudo certbot` 就可以启动证书部署
 
 ```
 sudo certbot
 ```
 
-如果你已经申请了商业证书，只需三个步骤，即可完成HTTPS配置
+### 手动部署
+
+如果你已经申请了商业证书，只需三个步骤，即可完成 HTTPS 配置
 
 1. 将申请的证书、 证书链文件和秘钥文件上传到 */data/cert* 目录
 2. 打开虚拟主机配置文件：*/etc/nginx/conf.d/default.conf* ，插入**HTTPS 配置段** 到 *server{ }* 中
@@ -32,8 +36,8 @@ sudo certbot
    ```
 3. 重启Nginx服务
 
-## 详细指南
+## 专题指南
 
-若参考上面的**简易步骤**仍无法成功设置HTTPS访问，请阅读由Websoft9提供的 [《HTTPS 专题指南》](https://support.websoft9.com/docs/faq/zh/tech-https.html#nginx)
+若参考上面的**快速指南**仍无法成功设置HTTPS访问，请阅读由Websoft9提供的 [《HTTPS 专题指南》](https://support.websoft9.com/docs/faq/zh/tech-https.html#nginx)
 
-HTTPS专题指南方案包括：HTTPS前置条件、HTTPS 配置段模板、注意事项、详细步骤以及故障诊断等具体方案。
+《HTTPS 专题专题》方案包括：HTTPS前置条件、HTTPS 配置段模板、注意事项、详细步骤以及故障诊断等具体方案。
