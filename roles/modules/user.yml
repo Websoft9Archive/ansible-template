@@ -13,3 +13,10 @@
     name: jetty
     shell: /usr/bin/bash
     create_home: yes
+
+# 有待测试
+- name: Create User for Canvas -- adduser --disabled-password --gecos canvas canvas
+  user: 
+    name: canvas
+    comment: canvas
+    password_lock: yes
