@@ -26,8 +26,8 @@ sudo systemctl status mysql
 ### Redis
 
 ```shell
-systemctl start redis
-systemctl stop redis
-systemctl restart redis
-systemctl status redis
+sudo systemctl start redis
+sudo systemctl stop redis
+sudo systemctl restart redis
+sudo systemctl status redis
 ```
