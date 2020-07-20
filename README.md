@@ -67,6 +67,6 @@ Detailed changes are documented in the [CHANGELOG](/CHANGELOG.md).
 
 ## License
 
-[MIT](http://opensource.org/licenses/MIT)
+[GNU Lesser General Public License v3.0](/License.md), Additional Terms: It is not allowed to publish free or paid image based on this project in any Cloud platform's MarketPlace  
 
 Copyright (c) 2016-present, Websoft9
