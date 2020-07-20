@@ -62,6 +62,8 @@ wget -N https://raw.githubusercontent.com/Websoft9/ansible-linux/master/scripts/
 - 命令脚本部署与镜像部署有什么区别？请参考：[镜像部署-vs-脚本部署](https://support.websoft9.com/docs/faq/zh/bz-product.html#镜像部署-vs-脚本部署)
 - 本项目支持在 Ansible Tower 上运行吗？支持
 
+.. |PyPI version| image:: https://img.shields.io/pypi/v/ansible.svg
+   :target: https://pypi.org/project/ansible
 .. |Docs badge| image:: https://img.shields.io/badge/docs-latest-brightgreen.svg
    :target: https://docs.ansible.com/ansible/latest/
 .. |Build Status| image:: https://api.shippable.com/projects/573f79d02a8192902e20e34b/badge?branch=devel
