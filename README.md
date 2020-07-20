@@ -27,15 +27,12 @@
 
 ### You Run It
 
-以 **root** 用户登录 Linux，运行下面的**All-in-One**即可启动自动化部署。
+以 **root** 权限运行自动化安装脚本，开始安装。必要时需要用户做出交互式选择，然后耐心等待直至安装成功。  
 
 ```
+sudo su -
 wget -N https://raw.githubusercontent.com/Websoft9/ansible-linux/master/scripts/install.sh; bash install.sh -r rabbitmq
 ```
-
-脚本后启动，就开始了自动化安装，必要时需要用户做出交互式选择，然后耐心等待直至安装成功。  
-
-若没有 root 用户，请以其他用户登录 Linux 后运行 `sudo su -` 命令提升为 root 权限，然后再运行下面的脚本。
 
 **安装中的注意事项：**  
 
