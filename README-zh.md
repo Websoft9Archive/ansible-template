@@ -54,7 +54,7 @@ wget -N https://raw.githubusercontent.com/Websoft9/ansible-linux/master/scripts/
 
 文档链接：https://support.websoft9.com/docs/rabbitmq/zh
 
-## 版权
+## License
 
 本项目是开源项目，采用 LGPL3.0 开源协议。补充条款：不允许在公有云的云市场上售卖通过本项目安装后直接或间接制作的镜像。
 
