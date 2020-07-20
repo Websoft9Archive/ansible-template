@@ -1,81 +1,84 @@
-|Docs badge| |Chat badge| |Build Status| |Code Of Conduct| |Mailing Lists| |License|
+## Introduction
 
-# RabbitMQ 自动化安装与部署
+Vue (pronounced `/vjuː/`, like view) is a **progressive framework** for building user interfaces. It is designed from the ground up to be incrementally adoptable, and can easily scale between a library and a framework depending on different use cases. It consists of an approachable core library that focuses on the view layer only, and an ecosystem of supporting libraries that helps you tackle complexity in large Single-Page Applications.
 
-[English](/README.md) | [简体中文](/README-zh.md)  
+#### Browser Compatibility
 
-本项目是由 [Websoft9](https://www.websoft9.com) 研发的 [RabbitMQ](https://rabbitmq.io/) 自动化安装程序，开发语言是 Ansible。使用本项目，只需要用户在 Linux 上运行一条命令，即可自动化安装 RabbitMQ，让原本复杂的安装过程变得没有任何技术门槛。  
+Vue.js supports all browsers that are [ES5-compliant](http://kangax.github.io/compat-table/es5/) (IE8 and below are not supported).
 
-本项目是开源项目，采用 LGPL3.0 开源协议。
+## Ecosystem
 
-## 配置要求
+| Project | Status | Description |
+|---------|--------|-------------|
+| [vue-router]          | [![vue-router-status]][vue-router-package] | Single-page application routing |
+| [vuex]                | [![vuex-status]][vuex-package] | Large-scale state management |
+| [vue-cli]             | [![vue-cli-status]][vue-cli-package] | Project scaffolding |
+| [vue-loader]          | [![vue-loader-status]][vue-loader-package] | Single File Component (`*.vue` file) loader for webpack |
+| [vue-server-renderer] | [![vue-server-renderer-status]][vue-server-renderer-package] | Server-side rendering support |
+| [vue-class-component] | [![vue-class-component-status]][vue-class-component-package] | TypeScript decorator for a class-based API |
+| [vue-rx]              | [![vue-rx-status]][vue-rx-package] | RxJS integration |
+| [vue-devtools]        | [![vue-devtools-status]][vue-devtools-package] | Browser DevTools extension |
 
-安装本项目，确保符合如下的条件：
+[vue-router]: https://github.com/vuejs/vue-router
+[vuex]: https://github.com/vuejs/vuex
+[vue-cli]: https://github.com/vuejs/vue-cli
+[vue-loader]: https://github.com/vuejs/vue-loader
+[vue-server-renderer]: https://github.com/vuejs/vue/tree/dev/packages/vue-server-renderer
+[vue-class-component]: https://github.com/vuejs/vue-class-component
+[vue-rx]: https://github.com/vuejs/vue-rx
+[vue-devtools]:  https://github.com/vuejs/vue-devtools
 
-| 条件       | 详情       | 备注  |
-| ------------ | ------------ | ----- |
-| 操作系统       | CentOS7.x, Ubuntu18.04, Amazon Linux2       |  可选  |
-| 公有云| AWS, Azure, 阿里云, 华为云, 腾讯云 | 可选 |
-| 私有云|  KVM, VMware, VirtualBox, OpenStack | 可选 |
-| 服务器配置 | 最低1核1G，安装时所需的带宽不低于10M |  建议采用按量100M带宽 |
+[vue-router-status]: https://img.shields.io/npm/v/vue-router.svg
+[vuex-status]: https://img.shields.io/npm/v/vuex.svg
+[vue-cli-status]: https://img.shields.io/npm/v/@vue/cli.svg
+[vue-loader-status]: https://img.shields.io/npm/v/vue-loader.svg
+[vue-server-renderer-status]: https://img.shields.io/npm/v/vue-server-renderer.svg
+[vue-class-component-status]: https://img.shields.io/npm/v/vue-class-component.svg
+[vue-rx-status]: https://img.shields.io/npm/v/vue-rx.svg
+[vue-devtools-status]: https://img.shields.io/chrome-web-store/v/nhdogjmejiglipccpnnnanhbledajbpd.svg
 
-更多请见 [官方 System requirement](https://www.rabbitmq.com/download.html)
+[vue-router-package]: https://npmjs.com/package/vue-router
+[vuex-package]: https://npmjs.com/package/vuex
+[vue-cli-package]: https://npmjs.com/package/@vue/cli
+[vue-loader-package]: https://npmjs.com/package/vue-loader
+[vue-server-renderer-package]: https://npmjs.com/package/vue-server-renderer
+[vue-class-component-package]: https://npmjs.com/package/vue-class-component
+[vue-rx-package]: https://npmjs.com/package/vue-rx
+[vue-devtools-package]: https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd
 
-## 组件
+## Documentation
 
-包含的核心组件为：可选 RabbitMQ2.8.24/3.0.7/3.2.13/4.0.14/5.0.7/stable 多个版本
+To check out [live examples](https://vuejs.org/v2/examples/) and docs, visit [vuejs.org](https://vuejs.org).
 
-更多请见 [参数表](/docs/zh/stack-components.md)
+## Questions
 
-## 本项目安装的是 RabbitMQ 最新版吗？
+For questions and support please use [the official forum](http://forum.vuejs.org) or [community chat](https://chat.vuejs.org/). The issue list of this repo is **exclusively** for bug reports and feature requests.
 
-本项目通过[RabbitMQ 官方仓库源](https://packagecloud.io/rabbitmq/rabbitmq-server/install)安装，每次安装均可保证为最新版本。
+## Issues
 
-版本号，请通过[官方下载](https://www.rabbitmq.com/download.html)页面查看  
+Please make sure to read the [Issue Reporting Checklist](https://github.com/vuejs/vue/blob/dev/.github/CONTRIBUTING.md#issue-reporting-guidelines) before opening an issue. Issues not conforming to the guidelines may be closed immediately.
 
-我们会定期检查版本准确性，并测试此项目，以保证用户可以顺利安装所需的RabbitMQ版本。  
+## Changelog
 
-## 安装指南
+Detailed changes for each release are documented in the [release notes](https://github.com/vuejs/vue/releases).
 
-以 root 用户登录 Linux，运行下面的**一键自动化安装命令**即可启动自动化部署。若没有 root 用户，请以其他用户登录 Linux 后运行 `sudo su -` 命令提升为 root 权限，然后再运行下面的脚本。
+## Stay In Touch
 
-```
-wget -N https://raw.githubusercontent.com/Websoft9/ansible-linux/master/scripts/install.sh; bash install.sh -r rabbitmq
-```
+- [Twitter](https://twitter.com/vuejs)
+- [Blog](https://medium.com/the-vue-point)
+- [Job Board](https://vuejobs.com/?ref=vuejs)
 
-脚本后启动，就开始了自动化安装，必要时需要用户做出交互式选择，然后耐心等待直至安装成功。
+## Contribution
 
-**安装中的注意事项：**  
+Please make sure to read the [Contributing Guide](https://github.com/vuejs/vue/blob/dev/.github/CONTRIBUTING.md) before making a pull request. If you have a Vue-related project/component/tool, add it with a pull request to [this curated list](https://github.com/vuejs/awesome-vue)!
 
-1. 操作不慎或网络发生变化，可能会导致SSH连接被中断，安装就会失败，此时请重新安装
-2. 安装缓慢、停滞不前或无故中断，主要是网络不通（或网速太慢）导致的下载问题，此时请重新安装
+Thank you to all the people who already contributed to Vue!
 
-多种原因导致无法顺利安装，请使用我们在公有云上发布的 [RabbitMQ 镜像](https://apps.websoft9.com/rabbitmq) 的部署方式
+<a href="https://github.com/vuejs/vue/graphs/contributors"><img src="https://opencollective.com/vuejs/contributors.svg?width=890" /></a>
 
 
-## 文档
+## License
 
-文档链接：https://support.websoft9.com/docs/rabbitmq/zh
+[MIT](http://opensource.org/licenses/MIT)
 
-## FAQ
-
-- 命令脚本部署与镜像部署有什么区别？请参考：[镜像部署-vs-脚本部署](https://support.websoft9.com/docs/faq/zh/bz-product.html#镜像部署-vs-脚本部署)
-- 本项目支持在 Ansible Tower 上运行吗？支持
-
-.. |PyPI version| image:: https://img.shields.io/pypi/v/ansible.svg
-   :target: https://pypi.org/project/ansible
-.. |Docs badge| image:: https://img.shields.io/badge/docs-latest-brightgreen.svg
-   :target: https://docs.ansible.com/ansible/latest/
-.. |Build Status| image:: https://api.shippable.com/projects/573f79d02a8192902e20e34b/badge?branch=devel
-   :target: https://app.shippable.com/projects/573f79d02a8192902e20e34b
-.. |Chat badge| image:: https://img.shields.io/badge/chat-IRC-brightgreen.svg
-   :target: https://docs.ansible.com/ansible/latest/community/communication.html
-.. |Code Of Conduct| image:: https://img.shields.io/badge/code%20of%20conduct-Ansible-silver.svg
-   :target: https://docs.ansible.com/ansible/latest/community/code_of_conduct.html
-   :alt: Ansible Code of Conduct
-.. |Mailing Lists| image:: https://img.shields.io/badge/mailing%20lists-Ansible-orange.svg
-   :target: https://docs.ansible.com/ansible/latest/community/communication.html#mailing-list-information
-   :alt: Ansible mailing lists
-.. |License| image:: https://img.shields.io/badge/license-GPL%20v3.0-brightgreen.svg
-   :target: COPYING
-   :alt: Repository License
+Copyright (c) 2013-present, Yuxi (Evan) You
