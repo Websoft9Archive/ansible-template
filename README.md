@@ -1,6 +1,10 @@
+[English](/README.md) | [简体中文](/README-zh.md)  
+
 ## Introduction
 
-Vue (pronounced `/vjuː/`, like view) is a **progressive framework** for building user interfaces. It is designed from the ground up to be incrementally adoptable, and can easily scale between a library and a framework depending on different use cases. It consists of an approachable core library that focuses on the view layer only, and an ecosystem of supporting libraries that helps you tackle complexity in large Single-Page Applications.
+**RabbitMQ 自动化安装与部署**是由 [Websoft9](https://www.websoft9.com) 研发的 [RabbitMQ](https://rabbitmq.io/) 自动化安装程序，开发语言是 Ansible。使用本项目，只需要用户在 Linux 上运行一条命令，即可自动化安装 RabbitMQ，让原本复杂的安装过程变得没有任何技术门槛。  
+
+本项目是开源项目，采用 LGPL3.0 开源协议。
 
 ## System Requirement
 
