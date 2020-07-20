@@ -27,17 +27,12 @@
 
 ### You Run It
 
-以 **root** 权限运行自动化安装脚本，开始安装。必要时需要用户做出交互式选择，然后耐心等待直至安装成功。  
+以 **root** 权限运行自动化安装脚本，开始安装。必要时需要用户做出交互式选择，然后耐心等待直至安装成功。网络连接中断或网络不通，会导致SSH中断，安装就会失败，此时请重新安装
 
 ```
 $ sudo su -
 $ wget -N https://raw.githubusercontent.com/Websoft9/ansible-linux/master/scripts/install.sh; bash install.sh -r rabbitmq
 ```
-
-**安装中的注意事项：**  
-
-1. 操作不慎或网络发生变化，可能会导致SSH连接被中断，安装就会失败，此时请重新安装
-2. 安装缓慢、停滞不前或无故中断，主要是网络不通（或网速太慢）导致的下载问题，此时请重新安装
 
 ### Image on Cloud 
 
