@@ -1,4 +1,4 @@
-|PyPI version| |Docs badge| |Chat badge| |Build Status| |Code Of Conduct| |Mailing Lists| |License|
+|Docs badge| |Chat badge| |Build Status| |Code Of Conduct| |Mailing Lists| |License|
 
 # RabbitMQ 自动化安装与部署
 
