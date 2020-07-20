@@ -27,7 +27,9 @@
 
 ## Installation
 
-以 **root** 用户登录 Linux，运行下面的**一键自动化安装命令**即可启动自动化部署。
+### You Run It
+
+以 **root** 用户登录 Linux，运行下面的**All-in-One**即可启动自动化部署。
 
 ```
 wget -N https://raw.githubusercontent.com/Websoft9/ansible-linux/master/scripts/install.sh; bash install.sh -r rabbitmq
@@ -42,15 +44,9 @@ wget -N https://raw.githubusercontent.com/Websoft9/ansible-linux/master/scripts/
 1. 操作不慎或网络发生变化，可能会导致SSH连接被中断，安装就会失败，此时请重新安装
 2. 安装缓慢、停滞不前或无故中断，主要是网络不通（或网速太慢）导致的下载问题，此时请重新安装
 
+### Image on Cloud 
+
 多种原因导致无法顺利安装，请使用我们在公有云上发布的 [RabbitMQ 镜像](https://apps.websoft9.com/rabbitmq) 的部署方式
-
-#### 本项目安装的是 RabbitMQ 最新版吗？
-
-本项目通过[RabbitMQ 官方仓库源](https://packagecloud.io/rabbitmq/rabbitmq-server/install)安装，每次安装均可保证为最新版本。
-
-版本号，请通过[官方下载](https://www.rabbitmq.com/download.html)页面查看  
-
-我们会定期检查版本准确性，并测试此项目，以保证用户可以顺利安装所需的RabbitMQ版本。  
 
 ## Documentation
 
@@ -67,6 +63,6 @@ Detailed changes are documented in the [CHANGELOG](/CHANGELOG.md).
 
 ## License
 
-[GNU Lesser General Public License v3.0](/License.md), Additional Terms: It is not allowed to publish free or paid image based on this project in any Cloud platform's MarketPlace  
+[MIT](http://opensource.org/licenses/MIT), Additional Terms: It is not allowed to publish free or paid image based on this project in any Cloud platform's MarketPlace
 
 Copyright (c) 2016-present, Websoft9
