@@ -25,6 +25,8 @@
 
 ## Installation
 
+You can install it by All-in-one Installer. In addition, you can deploy image published on major Cloud Platform by Websoft9
+
 ### All-in-one Installer
 
 以 **root** 权限运行自动化安装脚本，开始安装。必要时需要用户做出交互式选择，然后耐心等待直至安装成功。
