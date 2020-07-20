@@ -50,10 +50,7 @@ wget -N https://raw.githubusercontent.com/Websoft9/ansible-linux/master/scripts/
 
 RabbitMQ Administrator Guide ([En](https://support.websoft9.com/docs/rabbitmq/zh) | [中](https://support.websoft9.com/docs/rabbitmq/zh))
 
-## FAQ
 
-- 命令脚本部署与镜像部署有什么区别？请参考：[镜像部署-vs-脚本部署](https://support.websoft9.com/docs/faq/zh/bz-product.html#镜像部署-vs-脚本部署)
-- 本项目支持在 Ansible Tower 上运行吗？支持
 
 ## Changelog
 
@@ -64,3 +61,16 @@ Detailed changes are documented in the [CHANGELOG](/CHANGELOG.md).
 [MIT](http://opensource.org/licenses/MIT), Additional Terms: It is not allowed to publish free or paid image based on this project in any Cloud platform's MarketPlace
 
 Copyright (c) 2016-present, Websoft9
+
+## FAQ
+
+#### 命令脚本部署与镜像部署有什么区别？
+
+请参考：[镜像部署-vs-脚本部署](https://support.websoft9.com/docs/faq/zh/bz-product.html#镜像部署-vs-脚本部署)
+
+#### 本项目支持在 Ansible Tower 上运行吗
+Yes
+
+#### 如何安装和查看最新版？
+
+本项目通过[RabbitMQ 官方仓库源](https://packagecloud.io/rabbitmq/rabbitmq-server/install)安装，每次安装均可保证为最新版本。通过[官方下载](https://www.rabbitmq.com/download.html)页面查看官方版号。 
