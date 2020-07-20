@@ -5,8 +5,6 @@
 
 本项目是由 [Websoft9](https://www.websoft9.com) 研发的 [RabbitMQ](https://rabbitmq.io/) 自动化安装程序，开发语言是 Ansible。使用本项目，只需要用户在 Linux 上运行一条命令，即可自动化安装 RabbitMQ，并预配置必要项，让原本复杂的安装和与配置过程变得没有任何技术门槛。
 
-本项目是开源项目，采用 LGPL3.0 开源协议。
-
 ## 配置要求
 
 安装本项目，确保符合如下的条件：
@@ -55,6 +53,10 @@ wget -N https://raw.githubusercontent.com/Websoft9/ansible-linux/master/scripts/
 ## 文档
 
 文档链接：https://support.websoft9.com/docs/rabbitmq/zh
+
+## 版权
+
+本项目是开源项目，采用 LGPL3.0 开源协议。补充条款：不允许在公有云的云市场上售卖通过本项目安装后直接或间接制作的镜像。
 
 ## FAQ
 
