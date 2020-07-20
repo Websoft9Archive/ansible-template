@@ -67,4 +67,4 @@ Detailed changes are documented in the [CHANGELOG](/CHANGELOG.md).
 
 [MIT](http://opensource.org/licenses/MIT)
 
-Copyright (c) 2013-present, Yuxi (Evan) You
+Copyright (c) 2016-present, Websoft9
