@@ -25,16 +25,16 @@
 
 ## Installation
 
-### You Run It
+### Run All-in-one Installer
 
 以 **root** 权限运行自动化安装脚本，开始安装。必要时需要用户做出交互式选择，然后耐心等待直至安装成功。
-
-网络连接中断或网络不通，会导致SSH中断，安装就会失败，此时请重新安装
 
 ```
 $ sudo su -
 $ wget -N https://raw.githubusercontent.com/Websoft9/ansible-linux/master/scripts/install.sh; bash install.sh -r rabbitmq
 ```
+
+网络连接中断或网络不通，会导致SSH中断，安装就会失败，此时请重新安装。
 
 ### Image on Cloud 
 
@@ -42,9 +42,7 @@ $ wget -N https://raw.githubusercontent.com/Websoft9/ansible-linux/master/script
 
 ## Documentation
 
-RabbitMQ Administrator Guide ([En](https://support.websoft9.com/docs/rabbitmq/zh) | [中](https://support.websoft9.com/docs/rabbitmq/zh))
-
-
+RabbitMQ Administrator Guide ([English](https://support.websoft9.com/docs/rabbitmq/zh) | [简体中文](https://support.websoft9.com/docs/rabbitmq/zh))
 
 ## Changelog
 
