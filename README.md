@@ -54,7 +54,7 @@ wget -N https://raw.githubusercontent.com/Websoft9/ansible-linux/master/scripts/
 
 ## Documentation
 
-文档链接：https://support.websoft9.com/docs/rabbitmq/zh
+[RabbitMQ administrator guide](https://support.websoft9.com/docs/rabbitmq/zh)
 
 ## FAQ
 
