@@ -2,7 +2,7 @@
 
 [English](/README.md) | [简体中文](/README-zh.md)  
 
-**RabbitMQ 自动化安装与部署**是由 [Websoft9](https://www.websoft9.com) 研发的 [RabbitMQ](https://rabbitmq.io/) 自动化安装程序，开发语言是 Ansible。使用本项目，只需要用户在 Linux 上运行一条命令，即可自动化安装 RabbitMQ，让原本复杂的安装过程变得没有任何技术门槛。  
+**RabbitMQ 自动化安装与部署**是由 [Websoft9](https://www.websoft9.com) 研发的 [RabbitMQ](https://rabbitmq.io/) 自动化安装程序，开发语言是 Ansible。使用本项目，只需要用户在 Linux 上运行一条命令，即可自动化安装 RabbitMQ，并预配置必要项，让原本复杂的安装和与配置过程变得没有任何技术门槛。  
 
 ## System Requirement
 
@@ -19,7 +19,7 @@
 
 ## Ecosystem
 
-包含的核心组件为：可选 RabbitMQ2.8.24/3.0.7/3.2.13/4.0.14/5.0.7/stable 多个版本
+本项目包含的核心组件为：可选 RabbitMQ2.8.24/3.0.7/3.2.13/4.0.14/5.0.7/stable 多个版本
 
 更多请见 [参数表](/docs/zh/stack-components.md)
 
