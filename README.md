@@ -25,7 +25,7 @@
 
 ## Installation
 
-### Run All-in-one Installer
+### All-in-one Installer
 
 以 **root** 权限运行自动化安装脚本，开始安装。必要时需要用户做出交互式选择，然后耐心等待直至安装成功。
 
@@ -38,11 +38,11 @@ $ wget -N https://raw.githubusercontent.com/Websoft9/ansible-linux/master/script
 
 ### Image on Cloud 
 
-多种原因导致无法顺利安装，请使用我们在公有云上发布的 [RabbitMQ 镜像](https://apps.websoft9.com/rabbitmq) 的部署方式
+Follow our [RabbitMQ image](https://apps.websoft9.com/rabbitmq) for installation on major Cloud Platform
 
 ## Documentation
 
-RabbitMQ Administrator Guide ([English](https://support.websoft9.com/docs/rabbitmq/zh) | [简体中文](https://support.websoft9.com/docs/rabbitmq/zh))
+你所需要的初始化用户名、密码，路径参数RabbitMQ Administrator Guide ([English](https://support.websoft9.com/docs/rabbitmq/zh) | [简体中文](https://support.websoft9.com/docs/rabbitmq/zh))
 
 ## Changelog
 
