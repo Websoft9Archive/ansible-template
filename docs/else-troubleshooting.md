@@ -10,7 +10,7 @@ You can find the keywords **Failed** or **error** from the logs directory: `/dat
 
 #### RabbitMQ service can't start?
 
-Insufficient disk space, insufficient memory, and configuration file errors can make service not started  
+Insufficient disk space and memory, incorrect configuration file may cause the failure to start the service. 
 
 It is recommended to first check through the command.
 
