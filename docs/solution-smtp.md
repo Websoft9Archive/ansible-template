@@ -4,7 +4,7 @@ Sending mail is a common feature for RabbitMQ. After a large number of user prac
 
 > Do not try to install **Sendmail** or other Mail server software on your Cloud Server for sending mail, because it is very difficulty in maintenance.
 
-Follow is the sample using **SendGrid's SMTP Service** to configure sending mail for Metabase:
+Follow is the sample using **SendGrid's SMTP Service** to configure sending mail:
 
 1. Log in SendGrid console, prepare your SMTP settings like the follow sample
    ```
