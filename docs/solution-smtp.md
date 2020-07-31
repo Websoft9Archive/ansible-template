@@ -12,7 +12,7 @@ Follow is the sample using **SendGrid's SMTP Service** to configure sending mail
    SMTP port: 25 or 587 for unencrypted/TLS email, 465 for SSL-encrypted email
    SMTP Authentication: must be checked
    SMTP Encryption: must SSL
-   SMTP username: websoft9smpt
+   SMTP username: websoft9smtp
    SMTP password: #fdfwwBJ8f    
    ```
 2. Log in RabbitMQ Console
