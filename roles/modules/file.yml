@@ -18,4 +18,6 @@
     remote_src: yes
 
 - name: Rename dir name
-  shell: cd /data/wwwroot; if [ $( ls | grep "scratch-gui") ]; then mv scratch-gui* scratch; fi
+  shell: if [ $( ls | grep "scratch-gui") ]; then mv scratch-gui* scratch; fi
+  args:
+  chdir: /data/wwwroot
