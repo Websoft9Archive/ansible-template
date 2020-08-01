@@ -1,5 +1,7 @@
-#全局
+# Global
 region: "0"
+
+common_os_support: ["CentOS", "Ubuntu", "Amazon", "OracleLinux"]
 
 # rabbitmq variable
 
@@ -18,23 +20,22 @@ mysql_remote: True
 # docker
 docker_applications: 'phpmyadmin'
 
-# 生成应用数据库和用户
+# add databases and users
 mysql_databases:
  - name: rabbitmq
-   encoding: utf8
  
 mysql_users:
  - name: rabbitmq
    host: localhost
    priv: 'rabbitmq.*:ALL'
 
-# 初始化MySQL root密码
+# init passsword of database
 init_db: 
     mysql:
       user: root
       password: "123456"  
   
-# 应用数据库信息
+# init password of applications
 init_application:
   rabbitmq:
     service: rabbitmq
