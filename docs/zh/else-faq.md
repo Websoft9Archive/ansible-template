@@ -13,11 +13,11 @@ rabbitmq-server console
 
 #### 如果没有域名是否可以部署 RabbitMQ？
 
+可以，访问`http://服务器公网IP` 即可
+
 #### 数据库 root 用户对应的密码是多少？
 
 密码存放在服务器相关文件中：`/credentials/password.txt`
-
-可以，访问`http://服务器公网IP` 即可
 
 #### 是否有可视化的数据库管理工具？
 
