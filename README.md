@@ -1,50 +1,54 @@
+# RabbitMQ Cloud Installer
+
+![](https://libs.websoft9.com/common/websott9-cloud-installer.png) 
+
 ## Introduction
 
-[English](/README.md) | [简体中文](/README-zh.md)  
+[English](/README.md) | [简体中文](/README_zh.md)  
 
-**RabbitMQ 自动化安装与部署**是由 [Websoft9](https://www.websoft9.com) 研发的 [RabbitMQ](https://rabbitmq.io/) 自动化安装程序，开发语言是 Ansible。使用本项目，只需要用户在 Linux 上运行一条命令，即可自动化安装 RabbitMQ，并预配置必要项，让原本复杂的安装和与初始化配置过程变得没有任何技术门槛。  
+**RabbitMQ Cloud Installer**, developed by [Websoft9](https://www.websoft9.com), is an automatic installation program of [Apache RabbitMQ](https://rabbitmq.apache.org/) based on Ansible and shell. It helps user install RabbitMQ and pre-configure required items automatically and users only need to run a command on Linux. It simplifies the complicated installation and initialization process.  
 
 ## System Requirement
 
-安装本项目，确保符合如下的条件：
+System Requirement to install this repository are as following：
 
-| 条件       | 详情       | 备注  |
-| ------------ | ------------ | ----- |
-| 操作系统       | CentOS7.x, Ubuntu18.04, Amazon Linux2       |  可选  |
-| 公有云| AWS, Azure, 阿里云, 华为云, 腾讯云 | 可选 |
-| 私有云|  KVM, VMware, VirtualBox, OpenStack | 可选 |
-| 服务器配置 | 最低1核1G，安装时所需的带宽不低于10M |  建议采用按量100M带宽 |
+| Conditions       | Details                               | Notes                |
+| -------------- | ----------------------------------- | -------------------- |
+| Operating System   | CentOS7.x, Ubuntu18.04, Amazon Linux2 | Optional                 |
+| Public Cloud     | AWS, Azure, Alibaba Cloud, HUAWEI ClOUD, Tencent Cloud    | Optional                 |
+| Private Cloud     | KVM, VMware, VirtualBox, OpenStack    | Optional                 |
+| Server Configuration | vCPU no less than 1 core, Memory no less than  2 GIB, Storage no less than 10 GB, Bandwidth no less than 100M ||
 
-更多请见 [官方 System requirement](https://www.rabbitmq.com/download.html)
+To learn more information, please view [Installation & Configuration](https://rabbitmq.apache.org/installation.html).
 
 ## Ecosystem
 
-本项目包含的核心组件为：可选 RabbitMQ2.8.24/3.0.7/3.2.13/4.0.14/5.0.7/stable 多个版本
+Core components of this repository: Apache RabbitMQ, Nginx, PostgreSQL, Docker, phpPgAdmin on docker
 
-更多请见 [参数表](/docs/zh/stack-components.md)
+Learn more about [Parameters](/docs/stack-components.md).
 
 ## Installation
 
-You can install it by All-in-one Installer. In addition, you can deploy image published on major Cloud Platform by Websoft9
+You can install it by All-in-one Installer. In addition, you can deploy image published on major Cloud Platform by Websoft9.
 
-### All-in-one Installer
+#### All-in-one Installer
 
-以 **root** 权限运行自动化安装脚本，开始安装。必要时需要用户做出交互式选择，然后耐心等待直至安装成功。
+Run the automatic installation script with **root** authority to start the installation. If necessary, users need to make interactive choices, and then wait patiently until the installation is successful.
 
 ```
 $ sudo su -
 $ wget -N https://raw.githubusercontent.com/Websoft9/ansible-linux/master/scripts/install.sh; bash install.sh -r rabbitmq
 ```
 
-网络连接中断或网络不通，会导致SSH中断，安装就会失败，此时请重新安装。
+If the network is broken or blocked, SSH will be interrupted and the installation will fail. Please reinstall.
 
-### Image on Cloud 
+#### Image on Cloud 
 
-Follow our [RabbitMQ image](https://apps.websoft9.com/rabbitmq) for installation on major Cloud Platform
+Follow our [RabbitMQ image](https://apps.websoft9.com/rabbitmq) for installation on major Cloud Platform.
 
 ## Documentation
 
-你所需要的初始化用户名、密码，路径参数RabbitMQ Administrator Guide ([English](https://support.websoft9.com/docs/rabbitmq/zh) | [简体中文](https://support.websoft9.com/docs/rabbitmq/zh))
+To get information about initial installation, default username and password, HTTPS, SMTP, Backup, Upgrade and more, please view **Graylog Administrator Guide** ([English](https://support.websoft9.com/docs/rabbitmq) | [简体中文](https://support.websoft9.com/docs/rabbitmq/zh))
 
 ## Changelog
 
@@ -52,19 +56,20 @@ Detailed changes are documented in the [CHANGELOG](/CHANGELOG.md).
 
 ## License
 
-[MIT](http://opensource.org/licenses/MIT), Additional Terms: It is not allowed to publish free or paid image based on this project in any Cloud platform's MarketPlace
+[LGPL-3.0](/License.md), Additional Terms: It is not allowed to publish free or paid image based on this repository in any Cloud platform's Marketplace.
 
 Copyright (c) 2016-present, Websoft9
 
 ## FAQ
 
-#### 命令脚本部署与镜像部署有什么区别？
+#### Can I run this repository on Ansible Tower? 
 
-请参考：[镜像部署-vs-脚本部署](https://support.websoft9.com/docs/faq/zh/bz-product.html#镜像部署-vs-脚本部署)
+Yes.
 
-#### 本项目支持在 Ansible Tower 上运行吗
-Yes
+#### How to install and view the latest release?
 
-#### 如何安装和查看最新版？
+Get the RabbitMQ version from [RabbitMQ repository](https://github.com/apache/incubator-rabbitmq/releases), and modify the Ansible variable **[rabbitmq_version](/roles/ansible/rabbitmq/defaults/main.yml)** to change the RabbitMQ version for this repository. 
 
-本项目通过[RabbitMQ 官方仓库源](https://packagecloud.io/rabbitmq/rabbitmq-server/install)安装，每次安装均可保证为最新版本。通过[官方下载](https://www.rabbitmq.com/download.html)页面查看官方版号。 
+#### Is the default password safe?
+
+RabbitMQ Cloud Installer use the random password solution, every installation have different password, that mean your password is different from other users
