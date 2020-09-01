@@ -3,13 +3,9 @@ region: "0"
 
 common_os_support: ["CentOS", "Ubuntu", "Amazon", "OracleLinux"]
 
-# rabbitmq variable
+apache_certbot: True
+nginx_certbot: True
 
-rabbitmq_db_name: rabbitmq
-rabbitmq_db_user: rabbitmq
-rabbitmq_db_password: "123456"
-
-preend_certbot: True
 nginx_reverse_proxy_port: "8065"
 
 # role_mysql
@@ -18,7 +14,8 @@ mysql_root_password: "123456"
 mysql_remote: True
 
 # docker
-docker_applications: 'phpmyadmin'
+docker_applications: 
+  - phpmyadmin
 
 # add databases and users
 mysql_databases:
