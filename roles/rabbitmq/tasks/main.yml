@@ -1,15 +1,29 @@
 #1 Prepare
 #2 Install
 #3 Configure
-#3 Verify
+#4 Verify
 
 
-# install RabbitMQ by OS_family
+#1 Prepare
+- name: Create rabbitmq User
+  user:
+    name: rabbitmq
+    shell: /usr/sbin/nologin
+
+- name: Create rabbitmq directory
+  file:
+    path: /data/wwwroot/rabbitmq
+    state: directory
+    owner: rabbitmq
+    group: rabbitmq
+    recurse: yes
+    
+#2 Install
 - name: Install this role on {{ansible_os_family}}
   include: "{{ansible_os_family}}.yml"
+  
 
-# configure RabbitMQ
-## set environment variable
+#3 Configure
 - block:
   - name: Copy jdk_env to /etc/profile.d
     template:
@@ -24,20 +38,6 @@
       export ORACLE_HOME=/opt/oracle/product/18c/dbhomeXE
       export ORACLE_SID=XE
       export PATH=$PATH:$ORACLE_HOME/bin
-
-- name: Create rabbitmq User
-  user:
-    name: rabbitmq
-    shell: /usr/sbin/nologin
-    home: /data/wwwroot/rabbitmq
-    create_home: no
-
-- name: Create rabbitmq directory
-  file:
-    path: /data/wwwroot/rabbitmq
-    state: directory
-    owner: rabbitmq
-    group: rabbitmq
     
 - name: Download rabbitmq
   get_url:
@@ -94,6 +94,8 @@
     regexp: '"DataSource":'
     line: '    "DataSource": "{{rabbitmq_db_user}}:{{rabbitmq_db_password}}@tcp(localhost:3306)/{{rabbitmq_db_name}}?charset=utf8mb4,utf8&readTimeout=30s&writeTimeout=30s",'
     backrefs: yes 
+
+#4 Verify
 
 # set soft link, -f enforce the exist links
 # ln -sf src des
