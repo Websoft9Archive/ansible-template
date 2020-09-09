@@ -1,14 +1,14 @@
 # Troubleshooting
 
-We collect the most common troubleshooting of using RabbitMQ for your reference:
+We collect the most common faults in using RabbitMQ for your reference:
 
-> Instance troubleshooting is closely related to the Instance provider that is Cloud Platform, refer to [Cloud Platform Documentation](https://support.websoft9.com/docs/faq/tech-instance.html)
+> Most faults about the Instance is closely related to the Instance provider, Cloud Platform. Provided you're sure the fault is caused by Cloud Platform, refer to [Cloud Platform Documentation](https://support.websoft9.com/docs/faq/tech-instance.html)
 
-#### How can I use the logs?
+#### How can I check the error logs?
 
 You can find the keywords **Failed** or **error** from the logs directory: `/data/logs`
 
-#### RabbitMQ service can't start?
+#### Can't start RabbitMQ service?
 
 Insufficient disk space and memory, incorrect configuration file may cause the failure to start the service. 
 
@@ -28,6 +28,6 @@ free -lh
 
 #### Error in Chrome when modify password?
 
-This error is not attribute to RabbitMQ server, once you have upgraded you local Chrome, it solved
+This error has nothing to do with RabbitMQ server. Just upgrade you local Chrome to solve it.
 
 ![chrome error of RabbitMQ](https://libs.websoft9.com/Websoft9/DocsPicture/zh/rabbitmq/rabbitmq-chromeerror-websoft9.png)

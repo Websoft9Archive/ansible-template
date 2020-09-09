@@ -4,7 +4,7 @@ home: false
 
 # Overview
 
-This documentation is provided by [Websoft9](https://www.websoft9.com/), it can help users to acquire skills of RabbitMQ Deployment, Installation, Configuration, HTTPS, SMTP, Backup, Upgrade, Connect Instance and more.
+This documentation is provided by [Websoft9](https://www.websoft9.com/). It can help users to acquire skills of RabbitMQ Deployment, Installation, Configuration, HTTPS, SMTP, Backup, Upgrade, Connect Instance and more.
 
 [RabbitMQ](https://rabbitmq-server.apache.org/) is the most widely deployed open source message broker. With more than 35,000 production deployments of RabbitMQ world-wide at small startups and large enterprises, RabbitMQ is the most popular open source message broker.
 
@@ -14,8 +14,8 @@ This documentation is provided by [Websoft9](https://www.websoft9.com/), it can 
 
 ## Improve
 
-This document will continue to improve and broadly absorb the needs of users. If you have good idea, please don't hesitate to give us feedback by **Edit this page on GitHub**, and welcome you to fork this documentation on [Github](https://github.com/Websoft9/ansible-rabbitmq)
+To take more users' need into consideration, we're continuing to improve the documentation. If you have any good ideas, please don't hesitate to give us feedback by **Editing this page on GitHub**, and we welcome you to fork this documentation on [Github](https://github.com/Websoft9/ansible-rabbitmq)
 
 ## Scope
 
-The image library provided by Websoft9 has released on the major Cloud Platform and provides English and Chinese documents, which can be easily used by cloud users worldwide.
+The image library provided by Websoft9 has released on the major Cloud Platforms with English and Chinese documents, which brings great convenience to global cloud users to use it.
