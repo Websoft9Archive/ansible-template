@@ -1,6 +1,7 @@
 # Parameters
 
-The RabbitMQ deployment package contains a sequence software (referred to as "components") required for RabbitMQ to run. The important information such as the component name, installation directory path, configuration file path, port, version, etc. are listed below.
+The RabbitMQ deployment package contains a sequence of software required for RabbitMQ to run, referred to as "components".  
+Below list the important information such as the component name, installation directory path, configuration file path, port, version, etc.
 
 ## Path
 
@@ -25,9 +26,10 @@ MySQL Web Management URL: *http://Internet IP/9panel*, get credential from [Use
 
 ## Ports
 
-You can control(open or shut down) ports by **[Security Group Setting](https://support.websoft9.com/docs/faq/zh/tech-instance.html)** of your Cloud Server whether the port can be accessed from Internet.
+Open or close ports by **[Security Group Setting](https://support.websoft9.com/docs/faq/zh/tech-instance.html)** of your Cloud Server to decide whether the port can be accessed from outside Internet.
 
-You can run the cmd `netstat -tunlp` to list all used ports, and we list the following most useful ports:
+You can run the cmd `netstat -tunlp` to check all related ports.  
+The following are the ports you may use.
 
 | Name | Number | Use |  Necessity |
 | --- | --- | --- | --- |
@@ -38,7 +40,7 @@ You can run the cmd `netstat -tunlp` to list all used ports, and we list the fol
 
 ## Version
 
-You can see the version from product page of Marketplace. However, after being deployed to your server, the components will be automatically updated, resulting in a certain change in the version number. Therefore, the exact version number should be viewed by running the command on the server:
+You can see the version on product pages at Marketplace. However, after being deployed to your server, the components will be updated automatically, resulting in a certain change in the version number. Therefore, run the command on the server to view the exact version number. 
 
 ```shell
 # Check all components version

@@ -1,10 +1,10 @@
 # Username and Password
 
-You use the **SSH** to connect your Server and run the command `sudo cat /credentials/password.txt` to get the username and password of this deployment solution.
+Use the **SSH** to connect your Server and run the command `sudo cat /credentials/password.txt` to get the username and password of this deployment solution.
 
 ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/common/catdbpassword-websoft9.png)
 
-These accounts are required for RabbitMQ image installation and configuration
+Here are the required accounts for RabbitMQ image installation and configuration.
 
 ## RabbitMQ
 
@@ -21,7 +21,7 @@ These accounts are required for RabbitMQ image installation and configuration
 
 * Host Name: Internet IP or Public IP of your Instance
 * Connect by: Online SSH on Cloud Console or SFTP/SSH tools on your local computer
-* Password: It was set by yourself when created instance
+* Password: It was set by yourself when creating instance
 * Username: Different Cloud Platform has differences
    |  Cloud Platform   |  Administrator Username   | Other |
    | --- | --- | --- |
@@ -31,4 +31,4 @@ These accounts are required for RabbitMQ image installation and configuration
    |  AWS Ubuntu   |  ubuntu   | [How to enable root access?](https://support.websoft9.com/docs/aws/server-login.html#sample2-enable-the-root-username) |
    |  Alibaba Cloud, HUAWEI CLOUD, Tencent Cloud |  root   |
 
-   > If don't remember the password of Linux, you should reset password on Cloud Console
+   > If you forget the password of Linux, reset it on Cloud Console.
