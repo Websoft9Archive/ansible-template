@@ -4,16 +4,16 @@ If you have completed the RabbitMQ deployment on Cloud Platform, take the follow
 
 ## Preparation
 
-1. Get the **Internet IP** on your Cloud Platform
-2. Check your **[Inbound of Security Group Rule](https://support.websoft9.com/docs/faq/tech-instance.html)** of Cloud Console to ensure the TCP:8161 is allowed
-3. Make a domain resolution on your DNS Console if you want to use domain for RabbitMQ
+1. Get the **Internet IP** on your Cloud Platform.
+2. Check your **[Inbound of Security Group Rule](https://support.websoft9.com/docs/faq/tech-instance.html)** of Cloud Console to ensure the TCP:8161 is allowed.
+3. Make a domain resolution on your DNS Console if you want to use domain for RabbitMQ.
 
 ## RabbitMQ Installation Wizard
 
-1. Use local Chrome or Firefox to visit the URL *http://DNS:15672* or *http://Internet IP:15672*. You will enter installation wizard of RabbitMQ
+1. Use local Chrome or Firefox to visit the URL *http://DNS:15672* or *http://Internet IP:15672*. You will enter installation wizard of RabbitMQ.
    ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/rabbitmq/rabbitmq-login-websoft9.png)
 
-2. Log in RabbitMQ web console([Don't have password?](/stack-accounts.md#rabbitmq))  
+2. Log in RabbitMQ web console. ([Don't have password?](/stack-accounts.md#rabbitmq)) 
    ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/rabbitmq/rabbitmq-bk-websoft9.png)
 
 3. Set you new password from: 【Users】>【Admin】>【Permissions】>【Update this user】
@@ -25,6 +25,6 @@ If you have completed the RabbitMQ deployment on Cloud Platform, take the follow
 
 #### I can't visit the start page of RabbitMQ?
 
-Your TCP:15672 of Security Group Rules is not allowed, so there are no response from Chrome or Firefox.
+Your TCP:15672 of Security Group Rules is not allowed, so there is no response from Chrome or Firefox.
 
 #### RabbitMQ service can't start? 

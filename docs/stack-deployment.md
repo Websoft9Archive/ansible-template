@@ -16,7 +16,7 @@ For users with experience with cloud servers, to deploy by Image means "one-clic
 Websoft9 publishes [RabbitMQ image](https://apps.websoft9.com/rabbitmq) on Cloud Platforms and there are three methods for you to deploy.
 
 * When **Creating New Instance**, select the RabbitMQ image as the system boot template.
-* When **Subscribing RabbitMQ** at Marketplace, the system will promote you to create a new instance for this image at the same time.
+* When **Subscribing RabbitMQ** at Marketplace, the system will ask you to create a new instance for this image in the meantime.
 * When **Re-installing OS** for you instance, you can replace the existing image with a RabbitMQ image.
 
 ## Deploy by Script
