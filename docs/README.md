@@ -14,8 +14,10 @@ This documentation is provided by [Websoft9](https://www.websoft9.com/). It can 
 
 ## Improve
 
-To take more users' need into consideration, we're continuing to improve the documentation. If you have any good ideas, please don't hesitate to give us feedback by **Editing this page on GitHub**, and we welcome you to fork this documentation on [GitHub](https://github.com/Websoft9/ansible-rabbitmq).
+To take more users' need into consideration, we're continuing to improve the documentation.  
+If you have any good idea, feel free to **Editing this page on GitHub** to give us feedback and we welcome you to fork this documentation on [GitHub](https://github.com/Websoft9/ansible-rabbitmq).
 
 ## Scope
 
-The image library provided by Websoft9 has released on the major Cloud Platforms with English and Chinese documents, which brings great convenience to global cloud users to use it.
+The image library provided by Websoft9 has published on the major Cloud Platforms.  
+To provide ease of use for global users, we offer English and Chinese documents about the image.

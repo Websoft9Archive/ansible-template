@@ -8,7 +8,7 @@ Get to know the differences between the terms **Update** and **Upgrade**([Extend
 
 Maintenance for RabbitMQ includes the following two tasks.
 
-- Update system (Operating System and Running Environment) 
+- Update system (Operating System and Runtime) 
 - Upgrade RabbitMQ
 
 ## Update System 

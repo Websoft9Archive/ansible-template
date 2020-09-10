@@ -22,12 +22,11 @@ Obviously, a backup is necessary when comes to a failure. The existing backup fi
 
 There are four objects on the server for us to back up, including **operating system, environment software, database and application**. Each object may have unpredictable failures that cannot be solved as expected.
 
-Considering the nature of backup object, we suggest to take the following two necessary backup measures:
+We suggest to take the following two necessary backup measures:
 
 ### Automation Backups for Instance
 
-To make automation backups for Instance is to use the **Snapshot** or **Cloud Server Backup Service** on your Cloud Platform.  
-A snapshot is a full, read-only copy of a disk, which records the data of the disk. You can take a snapshot of an OS or data disk as a backup, and use it to have a key recovery.
+To make automation backups for Instance is to use the **Snapshot** or **Cloud Server Backup Service** on your Cloud Platform. A snapshot is a full, read-only copy of a disk, which records the data of the disk. You can take a snapshot of an OS or data disk as a backup, and use it to have a key recovery.
 
 View the following list to understand this kind of backup:
 

@@ -5,7 +5,7 @@
 - If RabbitMQ has been deployed, go to [Initial Installation](/zh/stack-installation.md) to complete the operation.
 - If not, you need to deploy RabbitMQ to your cloud server first.
 
-We offer two scenarios for RabbitMQ deployment and results are the same.
+We offer two schemes for RabbitMQ deployment and results are the same.
 
 ## Deploy by Image
 
@@ -13,11 +13,11 @@ We offer two scenarios for RabbitMQ deployment and results are the same.
 
 For users with experience with cloud servers, to deploy by Image means "one-click deployment".
 
-Websoft9 publishes [RabbitMQ image](https://apps.websoft9.com/rabbitmq) on Cloud Platforms and there are three methods for you to deploy.
+Websoft9 publishes [RabbitMQ image](https://apps.websoft9.com/rabbitmq) on Cloud Platforms and there are three methods to deploy it.
 
-* When **Creating New Instance**, select the RabbitMQ image as the system boot template.
-* When **Subscribing RabbitMQ** at Marketplace, the system will ask you to create a new instance for this image in the meantime.
-* When **Re-installing OS** for you instance, you can replace the existing image with a RabbitMQ image.
+* When **Create New Instance**, you can select the RabbitMQ image as the system boot template.
+* When you **Subscribe RabbitMQ** at Marketplace, the system will ask you to create a new instance for this image in the meantime.
+* When **Re-install OS** for you instance, you can replace the existing image with a RabbitMQ image.
 
 ## Deploy by Script
 

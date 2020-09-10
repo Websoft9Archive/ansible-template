@@ -13,7 +13,7 @@ Yes, e.g `rabbitmqctl change_password  admin newpassword`
 
 #### If there is no domain name, can I deploy RabbitMQ?
 
-Yes, visit RabbitMQ by *http://Internet IP:8161*
+Yes, access RabbitMQ by *http://Internet IP:8161*
 
 #### What is the password for the database root user?
 
@@ -49,4 +49,4 @@ Cloud platform refers to platform manufacturers that provide cloud computing ser
 
 #### What is the difference between Instance, Cloud Server, Virtual Machine, ECS, EC2, CVM, and VM?
 
-No difference. All refer to cloud servers. They are the different terminology used by different manufacturers.
+No difference. All refer to cloud servers. They are the different terminology used by manufacturers.

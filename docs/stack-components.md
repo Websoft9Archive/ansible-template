@@ -1,7 +1,6 @@
 # Parameters
 
-The RabbitMQ deployment package contains a sequence of software required for RabbitMQ to run, referred to as "components".  
-Below list the important information, the component name, installation directory path, configuration file path, port, version, etc.
+The RabbitMQ deployment package contains a sequence of software (referred to as "components") required for RabbitMQ to run. Below list the important information, the component name, installation directory path, configuration file path, port, version, etc.
 
 ## Path
 
@@ -27,7 +26,6 @@ MySQL Web Management URL: *http://Internet IP/9panel*, get credential from [Use
 ## Ports
 
 Open or close ports by **[Security Group Setting](https://support.websoft9.com/docs/faq/zh/tech-instance.html)** of your Cloud Server to decide whether the port can be accessed from Internet.
-
 You can run the cmd `netstat -tunlp` to check all related ports.  
 The following are the ports you may use.
 
