@@ -31,4 +31,4 @@ Here are the required username and password for RabbitMQ image installation and 
    |  AWS Ubuntu   |  ubuntu   | [How to enable root access?](https://support.websoft9.com/docs/aws/server-login.html#sample2-enable-the-root-username) |
    |  Alibaba Cloud, HUAWEI CLOUD, Tencent Cloud |  root   |
 
-   > If you forget the password of Linux, reset it on Cloud Console.
+   > If you forgot the password of Linux, reset it on Cloud Console.
