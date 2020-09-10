@@ -21,11 +21,11 @@ Here are the required accounts for RabbitMQ image installation and configuration
 
 * Host Name: Internet IP or Public IP of your Instance
 * Connect by: Online SSH on Cloud Console or SFTP/SSH tools on your local computer
-* Password: It was set by yourself when creating instance
-* Username: Different Cloud Platform has differences
+* Password: It was set by yourself when created instance.
+* Username: Different Cloud Platform has differences.
    |  Cloud Platform   |  Administrator Username   | Other |
    | --- | --- | --- |
-   |  Azure   |  It was set by yourself when created instance   | [How to enable root access?](https://support.websoft9.com/docs/azure/server-login.html#sample2-enable-the-root-username) |
+   |  Azure   |  It was set by yourself when created instance.   | [How to enable root access?](https://support.websoft9.com/docs/azure/server-login.html#sample2-enable-the-root-username) |
    |  AWS CentOS   |  centos   | [How to enable root access?](https://support.websoft9.com/docs/aws/server-login.html#sample2-enable-the-root-username) |
    |  AWS AmaonLinux   |  ec2-user   | [How to enable root access?](https://support.websoft9.com/docs/aws/server-login.html#sample2-enable-the-root-username) |
    |  AWS Ubuntu   |  ubuntu   | [How to enable root access?](https://support.websoft9.com/docs/aws/server-login.html#sample2-enable-the-root-username) |

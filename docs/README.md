@@ -14,7 +14,7 @@ This documentation is provided by [Websoft9](https://www.websoft9.com/). It can 
 
 ## Improve
 
-To take more users' need into consideration, we're continuing to improve the documentation. If you have any good ideas, please don't hesitate to give us feedback by **Editing this page on GitHub**, and we welcome you to fork this documentation on [Github](https://github.com/Websoft9/ansible-rabbitmq)
+To take more users' need into consideration, we're continuing to improve the documentation. If you have any good ideas, please don't hesitate to give us feedback by **Editing this page on GitHub**, and we welcome you to fork this documentation on [GitHub](https://github.com/Websoft9/ansible-rabbitmq).
 
 ## Scope
 

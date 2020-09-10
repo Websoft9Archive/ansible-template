@@ -19,7 +19,7 @@ If you have completed the RabbitMQ deployment on Cloud Platform, take the follow
 3. Set you new password from: 【Users】>【Admin】>【Permissions】>【Update this user】
    ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/rabbitmq/rabbitmq-pw-websoft9.png)
 
-> More guide about RabbitMQ, please refer to [RabbitMQ Documentation](https://www.rabbitmq.com/documentation.html)
+> More guide about RabbitMQ, please refer to [RabbitMQ Documentation](https://www.rabbitmq.com/documentation.html).
 
 ## Q&A
 

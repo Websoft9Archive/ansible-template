@@ -40,7 +40,7 @@ View the following list to understand this kind of backup:
 - Automation or Manual: fully automated backup after setting strategy
 ```
 
-Different Cloud Platforms' snapshot settings slightly differ. Refer to [Cloud platform backup solution](https://support.websoft9.com/docs/faq/tech-instance.html)
+Different Cloud Platforms' snapshot settings slightly differ. Refer to [Cloud platform backup solution](https://support.websoft9.com/docs/faq/tech-instance.html).
 
 ### Manual backup for application
 

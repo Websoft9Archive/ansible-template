@@ -1,6 +1,6 @@
 # Deployment
 
-**Deployment is to copy the pre-installed RabbitMQ package online to your Cloud Server**. For example, after the user subscribe RabbitMQ on the Cloud Platform, the Platform will automatically copy the RabbitMQ to the corresponding Cloud Server.
+**Deployment is to copy the pre-installed RabbitMQ package online to your Cloud Server**. For example, after the user subscribes RabbitMQ on the Cloud Platform, the Platform will automatically copy the RabbitMQ to the corresponding Cloud Server.
 
 - If RabbitMQ has been deployed, go to [Initial Installation](/zh/stack-installation.md) to complete the operation.
 - If not, you need to deploy RabbitMQ to your cloud server first.
@@ -29,4 +29,4 @@ Websoft9 provides the [RabbitMQ ansible automation script](https://github.com/We
 
 No matter you **deploy by image** or **deploy by script**, the results are the same. So, what's the difference between the two deployment methods?
 
-Suggest to read the document [Deploy by Image vs Deploy by Script](https://support.websoft9.com/docs/faq/bz-product.html#deployment-comparison)
+Suggest to read the document [Deploy by Image vs Deploy by Script](https://support.websoft9.com/docs/faq/bz-product.html#deployment-comparison).
