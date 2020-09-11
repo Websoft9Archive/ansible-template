@@ -1,6 +1,6 @@
 # Initial Installation
 
-If you have completed the RabbitMQ deployment, take the following steps to start a quick use.
+If you have completed the RabbitMQ deployment, follow the steps below to start a quick use.
 
 ## Preparation
 

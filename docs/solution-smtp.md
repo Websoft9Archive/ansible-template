@@ -6,7 +6,7 @@ Sending mail is a common feature for RabbitMQ. With a large number of users' pra
 
 Taking **SendGrid's SMTP Service** as an example, refer to the following steps to configure sending mail:
 
-1. log in SendGrid console, and prepare your SMTP settings;
+1. Log in SendGrid console, and prepare your SMTP settings.
    ```
    SMTP host: smtp.sendgrid.net
    SMTP port: 25 or 587 for unencrypted/TLS email, 465 for SSL-encrypted email
@@ -15,9 +15,9 @@ Taking **SendGrid's SMTP Service** as an example, refer to the following steps t
    SMTP username: websoft9smtp
    SMTP password: #fdfwwBJ8f    
    ```
-2. log in RabbitMQ Console;
-3. enter the SMTP settings;
+2. Log in RabbitMQ Console.
+3. Enter the SMTP settings.
 ![Metabase SMTP](https://libs.websoft9.com/Websoft9/DocsPicture/en/metabase/metabase-smtp-websoft9.png)
-4. click the **Test Connection**. You will get the feedback *"no errors were..."* if SMTP is successful.
+4. Click the **Test Connection**. You will get the feedback *"no errors were..."* if SMTP is valid.
 
 More SMTP Service(Gmail, Hotmail, QQ mail, Yahoo mail, SendGrid and so on)  settings or Issues with SMTP, please refer to Websoft9's *[SMTP Guide](https://support.websoft9.com/docs/faq/tech-smtp.html)*

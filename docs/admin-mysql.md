@@ -1,6 +1,8 @@
 # MySQL
 
-RabbitMQ deployment package includes MySQL and Web-GUI tool phpMyAdmin for MySQL management. Take the following steps to use it:
+RabbitMQ deployment package includes MySQL and Web-GUI tool phpMyAdmin for MySQL management. 
+
+Follow the steps below to use it:
 
 1. Log in Cloud Console, and make sure the **TCP:9090** port is allowed on **[Inbound of Security Group Rule](https://support.websoft9.com/docs/faq/tech-instance.html)**.
 

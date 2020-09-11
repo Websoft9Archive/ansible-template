@@ -14,7 +14,7 @@
 
 1. 确保域名解析已经生效  
 2. 使用 SFTP 工具登录云服务器
-2. 修改 [Nginx虚拟机主机配置文件](/zh/stack-components.md#nginx)，将其中的 **server_name** 项的值修改为你的域名
+3. 修改 [Nginx虚拟机主机配置文件](/zh/stack-components.md#nginx)，将其中的 **server_name** 项的值修改为你的域名
    ```text
    server
    {
@@ -23,4 +23,4 @@
    ...
    }
    ```
-3. 保存配置文件，重启 [Nginx 服务](/zh/admin-services.md#nginx)
+4. 保存配置文件，重启 [Nginx 服务](/zh/admin-services.md#nginx)

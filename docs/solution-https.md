@@ -20,11 +20,11 @@ sudo certbot
 
 If you have applied for a commercial certificate, complete the HTTPS configuration in just three steps:
 
-1. upload your certificate, file of the certificate chain and secret key to the directory: */data/cert*;
+1. Upload your certificate, file of the certificate chain and secret key to the directory: */data/cert*.
 
-2. open the vhost configuration file: */etc/nginx/conf.d/default.conf*; 
+2. Open the vhost configuration file: */etc/nginx/conf.d/default.conf*.
 
-3. insert the **HTTPS template** into *server{  }* and modify your certificate path.
+3. Insert the **HTTPS template** into *server{  }* and modify your certificate path.
    ``` text
    #-----HTTPS template start------------
    listen 443 ssl; 

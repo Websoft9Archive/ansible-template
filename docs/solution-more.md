@@ -12,10 +12,10 @@ The precondition for binding a domain is that RabbitMQ can accessed by domain na
 
 When there is only one website on the server, you can visit the website without binding domain. While considering the server security and subsequent maintenance, **Binding Domain** is necessary.
 
-Steps for binding RabbitMQ domain:
+Steps for binding RabbitMQ domain are as follows:
 
-1. connect your Cloud Server;
-2. modify [Nginx vhost configuration file](/stack-components.md#nginx),and change the **server_name**'s value to your domain name.
+1. Connect your Cloud Server;
+2. Modify [Nginx vhost configuration file](/stack-components.md#nginx),and change the **server_name**'s value to your domain name.
    ```text
    server
    {
