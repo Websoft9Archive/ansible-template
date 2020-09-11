@@ -14,8 +14,8 @@ When there is only one website on the server, you can visit the website without 
 
 Steps for binding RabbitMQ domain:
 
-1. Connect your Cloud Server.
-2. Modify [Nginx vhost configuration file](/stack-components.md#nginx), and change the **server_name**'s value to your domain name.
+1. connect your Cloud Server;
+2. modify [Nginx vhost configuration file](/stack-components.md#nginx),and change the **server_name**'s value to your domain name.
    ```text
    server
    {

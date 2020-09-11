@@ -28,7 +28,7 @@ We suggest to take the following two necessary backup measures:
 
 To make automation backups for Instance is to use the **Snapshot** or **Cloud Server Backup Service** on your Cloud Platform. A snapshot is a full, read-only copy of a disk, which records the data of the disk. You can take a snapshot of an OS or data disk as a backup, and use it to have a key recovery.
 
-View the following list to understand this kind of backup:
+View the following list to understand this kind of backup.
 
 ```
 - Backup scope: all data on a disk including operating system, software environment, database and applications
@@ -45,7 +45,7 @@ Different Cloud Platforms' snapshot settings slightly differ. Refer to [Cloud pl
 
  Manual backups for applications is to achieve a minimized backup scheme by **Exporting source code and database of application**.
 
- View the following list to understand this kind of backup:
+ View the following list to understand this kind of backup.
 
 ```
 - Backup scope: Source code and database of application
@@ -57,8 +57,8 @@ Different Cloud Platforms' snapshot settings slightly differ. Refer to [Cloud pl
 ```
 The general steps to make a manual backup are as follows:
 
-1. Just compress and download the entire */data/wwwroot* directory by SFTP. 
-2. Export LAMP's database by [phpMyAdmin](/admin-mysql.md)
+1. compress and download the entire directory */data/wwwroot* by SFTP;
+2. export LAMP's database by [phpMyAdmin](/admin-mysql.md);
    ![](https://libs.websoft9.com/Websoft9/DocsPicture/en/phpmyadmin/phpmyadmin-export-websoft9.png)
-3. Put the source code file and database file in the same folder, and name it according to the date.
-4. Complete a backup.
+3. put the source code file and database file in the same folder, and name it according to the date;
+4. complete a backup.

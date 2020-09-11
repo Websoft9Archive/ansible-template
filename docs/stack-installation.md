@@ -23,7 +23,7 @@ If you have completed the RabbitMQ deployment, take the following steps to start
 
 ## Q&A
 
-#### I can't visit the start page of RabbitMQ?
+#### Can't visit the start page of RabbitMQ?
 
 Your TCP:15672 of Security Group Rules is not allowed, so there is no response from Chrome or Firefox.
 

@@ -16,7 +16,7 @@ Nginx main configuration file: */etc/nginx/nginx.conf*
 Nginx logs file: */var/log/nginx*  
 Nginx rewrite rules directory: */etc/nginx/conf.d/rewrite* 
 
-### MYSQL
+### MySQL
 
 MySQL installation directory: */usr/local/mysql*  
 MySQL data directory: */data/mysql*  
