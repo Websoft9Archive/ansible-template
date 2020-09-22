@@ -21,7 +21,7 @@ RabbitMQ 域名绑定操作步骤：
    server
    {
    listen 80;
-   server_name www.example.com;  # 此处修改为你的域名
+   server_name rabbitmq.yourdomain.com;  # 此处修改为你的域名
    ...
    }
    ```
