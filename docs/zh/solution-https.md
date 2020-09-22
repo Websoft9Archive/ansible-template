@@ -32,7 +32,7 @@ sudo certbot
    ssl_prefer_server_ciphers on;
    #-----HTTPS template end------------
    ```
-3. 重启Nginx服务
+3. 重启[Nginx服务](/zh/admin-services.md#nginx)
 
 ## 专题指南
 
