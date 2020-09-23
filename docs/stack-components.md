@@ -25,15 +25,20 @@ MySQL Web Management URL: *http://Internet IP/9panel*, get credential from [Use
 
 ## Ports
 
-Open or close ports by **[Security Group Setting](https://support.websoft9.com/docs/faq/zh/tech-instance.html)** of your Cloud Server to decide whether the port can be accessed from Internet.
+Open or close ports by **[Security Group Setting](https://support.websoft9.com/docs/faq/tech-instance.html)** of your Cloud Server to decide whether the port can be accessed from Internet.  
+
 You can run the cmd `netstat -tunlp` to check all related ports.  
-The following are the ports you may use.
+
+The following are the ports you may use:
 
 | Name | Number | Use |  Necessity |
 | --- | --- | --- | --- |
-| HTTP | 8161 | HTTP requests for RabbitMQ Console| Required |
-| HTTPS | 5672 | epmd | Optional |
-| TCP | 55672 | Erlang distribution | Optional |
+| TCP | 80 | HTTP to access RabbitMQ | Required |
+| TCP | 443 | HTTPS to access RabbitMQ | Optional |
+| TCP | 3306 | Remote to access MySQL | Optional |
+| TCP | 9003 | Use port to access RabbitMQ | Optional |
+| TCP | 9002 | RabbitMQ Document Server on Docker | Optional |
+| TCP | 9090 | phpMyAdmin on Docker | Optional |
 
 
 ## Version
