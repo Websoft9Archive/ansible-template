@@ -60,6 +60,8 @@ Detailed changes are documented in the [CHANGELOG](/CHANGELOG.md).
 
 Copyright (c) 2016-present, Websoft9
 
+This program provided by Websoft9 contains a series of software with separate copyright notices and license terms. Your use of the source code for the software included is subject to the terms and conditions of its own license.
+
 ## FAQ
 
 #### Can I run this repository on Ansible Tower? 
