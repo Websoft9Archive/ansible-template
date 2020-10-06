@@ -26,3 +26,24 @@ RabbitMQ 域名绑定操作步骤：
    }
    ```
 4. 保存配置文件，重启 [Nginx 服务](/zh/admin-services.md#nginx)
+
+## 重置密码
+
+常用的 RabbitMQ 重置密码相关的操作主要有修改密码和找回密码两种类型：
+
+### 修改密码
+
+1. 登录 RabbitMQ 后台，依次打开：【Manage】>【Staff】，找到所需修改密码的账号对象
+  ![RabbitMQ 修改密码](https://libs.websoft9.com/Websoft9/DocsPicture/en/rabbitmq/rabbitmq-modifypw001-websoft9.png)
+
+2. 开始修改密码
+  ![RabbitMQ 修改密码](https://libs.websoft9.com/Websoft9/DocsPicture/en/rabbitmq/rabbitmq-modifypw002-websoft9.png)
+
+### 找回密码
+
+如果用户忘记了密码，建议通过邮件的方式找回密码：
+
+1. 完成 [SMTP 设置](/zh/solution-smtp.md)
+
+2. 打开 RabbitMQ 登录页面，点击【Forgot】开始通过邮件找回密码
+  ![Ghost 找回密码](https://libs.websoft9.com/Websoft9/DocsPicture/en/rabbitmq/rabbitmq-forgetpw-websoft9.png)
