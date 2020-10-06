@@ -24,3 +24,24 @@ Steps for binding RabbitMQ domain are as follows:
    ...
    }
    ```
+## Resetting Password
+
+There are two main measures to reset password.
+
+### Changing password
+
+Take the steps below:
+
+1. log in the RabbitMQ backend, open 【Manage】>【Staff】 and find the user account, of which you want to change password;
+
+2. start to change the password.
+
+### Forgot Password
+
+Try to retrieve your password through e-mail when forgot it.
+
+Follow the steps below:
+
+1. complete [SMTP setting](/solution-smtp.md);
+
+2. open
