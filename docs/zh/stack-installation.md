@@ -10,7 +10,7 @@
 
 ## RabbitMQ 安装向导
 
-1. 使用本地电脑的 Chrome 或 Firefox 浏览器访问网址：*http://域名:15672* 或 *http://Internet IP:15672*, 进入初始化页面
+1. 使用本地电脑的 Chrome 或 Firefox 浏览器访问网址：*http://域名:15672* 或 *http://服务器公网IP:15672*, 进入初始化页面
    ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/rabbitmq/rabbitmq-login-websoft9.png)
 
 2. 输入账号密码（[不知道账号密码？](/zh/stack-accounts.md#rabbitmq)），成功登录到 RabbitMQ 后台  
