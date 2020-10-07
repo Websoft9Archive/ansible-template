@@ -1,5 +1,6 @@
-  
-# 核心任务
+# This is Cloud-Installer template of Websoft9
+# Task priority: pre_tasks > role > tasks > post_task
+# Variable priority: vars_files > vars
 
 - name: RabbitMQ
   hosts: all
