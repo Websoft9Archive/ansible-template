@@ -1,16 +1,9 @@
 - src: http://github.com/websoft9dev/role_common
-  version: main
-
 - src: http://github.com/websoft9dev/role_cloud
-  version: main
-
-- src: http://github.com/websoft9dev/role_nginx
-  version: main
-
-# 根据需求添加相对应的role
-
+- src: http://github.com/websoft9dev/role_docker
+- src: http://github.com/websoft9dev/role_mysql
+- src: http://github.com/websoft9dev/role_mongodb
+- src: http://github.com/websoft9dev/role_nginx  
+- src: http://github.com/websoft9dev/role_init
 - src: http://github.com/websoft9dev/role_preend
-  version: main
-
 - src: http://github.com/websoft9dev/role_end
-  version: main
