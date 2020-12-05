@@ -2,7 +2,7 @@
 
 **Deployment is to copy the pre-installed RabbitMQ package online to your Cloud Server**. For example, after the user subscribes RabbitMQ on the Cloud Platform, the Platform will automatically copy the RabbitMQ to the corresponding Cloud Server.
 
-- If RabbitMQ has been deployed, go to [Initial Installation](/zh/stack-installation.md) to complete the operation.
+- If RabbitMQ has been deployed, go to [Initial Installation](/stack-installation.md) to complete the operation.
 - If not, you need to deploy RabbitMQ to your cloud server first.
 
 We offer two schemes for RabbitMQ deployment and results are the same.
