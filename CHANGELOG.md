@@ -9,6 +9,7 @@
 
 ### Bug Fixes
 
+* 2020-12-05  Deployment.doc link error
 * 2020-02-14  rabbitmq-version版本输出
 * 2020-02-13  rabbitmq-version版本输出
 
