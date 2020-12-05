@@ -21,7 +21,16 @@ Nginx rewrite rules directory: */etc/nginx/conf.d/rewrite*
 MySQL installation directory: */usr/local/mysql*  
 MySQL data directory: */data/mysql*  
 MySQL configuration file: */etc/my.cnf*    
-MySQL Web Management URL: *http://Internet IP/9panel*, get credential from [Username and Password](/stack-accounts.md)
+
+MySQL Web Management refer to [MySQL Management](/admin-mysql.md)
+
+
+####  phpMyAdmin
+
+phpMyAdmin is a visual MySQL management tool, is installed based on docker.  
+
+phpMyAdmin directory：*/data/apps/phpmyadmin*  
+phpMyAdmin docker compose file：*/data/apps/phpmyadmin/docker-compose.yml* 
 
 ## Ports
 
