@@ -19,7 +19,7 @@ Here are the required username and password for RabbitMQ image installation and 
 
 ## Linux
 
-* Host Name: Internet IP or Public IP of your Instance
+* Host Name: Server's Internet IP or Public IP of your Instance
 * Connect by: Online SSH on Cloud Console or SFTP/SSH tools on your local computer
 * Password: It was set by yourself when created instance.
 * Username: Different Cloud Platform has differences.

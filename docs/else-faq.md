@@ -13,7 +13,7 @@ Yes, e.g `rabbitmqctl change_password  admin newpassword`
 
 #### If there is no domain name, can I deploy RabbitMQ?
 
-Yes, access RabbitMQ by *http://Internet IP:8161*.
+Yes, access RabbitMQ by *http://Server's Internet IP:8161*.
 
 #### What is the password for the database root user?
 
@@ -21,7 +21,7 @@ The password is stored in the server related file `/credentials/password.txt`.
 
 #### Is there a web-base GUI database management tool?
 
-Yes, phpMyAdmin is included. Visit by *http://Internet IP:9090*.
+Yes, phpMyAdmin is included. Visit by *http://Server's Internet IP:9090*.
 
 #### Is it possible to modify the source path of RabbitMQ?
 
