@@ -28,5 +28,5 @@ version: v1.0.5
 
 ## The reason of conjecture
 
-mysql version shoudle be >5.7 
+mysql version shoud be >5.7 
 
