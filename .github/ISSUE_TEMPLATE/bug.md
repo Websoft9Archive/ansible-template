@@ -1,12 +1,10 @@
----
-name: Bug report
-about: Report a bug encountered while using ansible-template
-labels: bug
----
 ## Environment
-OS: centos7
-Cloud: azure
+---
+OS:  centos7
 version: v1.0.5
+Cloud: azure
+
+---
 
 ## Steps to reproduce the issue
 
