@@ -1,8 +1,8 @@
 
 ---
-OS:  centos7
-version: v1.0.5
+OS: centos7
 Cloud: azure
+version: v1.0.5
 ---
 
 ## Steps to reproduce the issue
