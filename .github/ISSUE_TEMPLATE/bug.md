@@ -6,13 +6,13 @@ Cloud: azure
 version: v1.0.5
 ---
 
-## Steps to reproduce the issue
+## Steps to reproduce the bug
 
 1. start from a azure image xxx
 2. use random password login
 3. click 【setting】, show error
 
-## Print Screen of the issue
+## Print Screen of the bug
 
 
 ## Context information (for bug reports)
