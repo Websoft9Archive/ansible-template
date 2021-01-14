@@ -1,6 +1,6 @@
 ---
 name: Bug report
-about: Report a bug encountered while using ansible-template
+about: Report a bug encountered while using
 OS: centos7
 Cloud: azure
 version: v1.0.5
