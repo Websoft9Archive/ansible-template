@@ -1,4 +1,3 @@
-
 ---
 OS: centos7
 Cloud: azure
