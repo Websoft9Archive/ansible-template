@@ -3,7 +3,6 @@
 OS:  centos7
 version: v1.0.5
 Cloud: azure
-
 ---
 
 ## Steps to reproduce the issue
