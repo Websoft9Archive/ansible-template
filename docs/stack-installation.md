@@ -21,6 +21,8 @@ If you have completed the RabbitMQ deployment, follow the steps below to start a
 
 > More guide about RabbitMQ, please refer to [RabbitMQ Documentation](https://www.rabbitmq.com/documentation.html).
 
+## RabbitMQ Setup wizard
+
 ## Q&A
 
 #### Can't visit the start page of RabbitMQ?
