@@ -1,11 +1,12 @@
 # CHANGELOG
 
-## Release v0.37.3-1  2021-01-21
+## Release Gitlab-v13.8.1  2021-2-3
 
 ### Fixes
-- Metabase cannot run normally, 502 error is reported #3
+- AWS AmazonLinux2 update error #3
 
 ### Enhancements
-- 0.36.4 to 0.37.3 #2
+- Upgrade from v13.2.1 to v13.8.2 #3
+
 
 
