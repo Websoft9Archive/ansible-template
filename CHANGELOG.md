@@ -1,19 +1,11 @@
 # CHANGELOG
 
-## To do
+## Release v0.37.3-1  2021-01-21
 
-1. 可视化管理工具
-2. AmazonLinux支持
+### Fixes
+- Metabase cannot run normally, 502 error is reported #3
 
-## Logs
+### Enhancements
+- 0.36.4 to 0.37.3 #2
 
-### Bug Fixes
 
-* 2020-12-05  Deployment.doc link error
-* 2020-02-14  rabbitmq-version版本输出
-* 2020-02-13  rabbitmq-version版本输出
-
-### Features
-
-* 2020-02-14  增加GUI工具
-* 2020-02-13  增加2.8版本
