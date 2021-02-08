@@ -17,10 +17,10 @@ Run a command to complete updating the system:
 
 ``` shell
 #For Ubuntu&Debian
-apt update && apt upgrade -y
+sudo apt update && apt upgrade -y
 
 #For Centos&Redhat
-yum update -y --skip-broken
+sudo yum update -y --skip-broken
 ```
 > This deployment package is pre-configured with a scheduled task for automatic updating. If you want to remove the automatic updating, please delete the corresponding Cron.
 
