@@ -14,7 +14,8 @@ RabbitMQ logs directory:  */data/logs/rabbitmq*
 Nginx vhost configuration file: */etc/nginx/conf.d/default.conf*    
 Nginx main configuration file: */etc/nginx/nginx.conf*   
 Nginx logs file: */var/log/nginx*  
-Nginx rewrite rules directory: */etc/nginx/conf.d/rewrite* 
+Nginx rewrite rules directory: */etc/nginx/conf.d/rewrite*  
+Nginx htpasswd file: */etc/nginx/.htpasswd/htpasswd.conf*  
 
 ### MySQL
 
