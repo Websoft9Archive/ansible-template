@@ -18,7 +18,8 @@ RabbitMQ 日志目录： */data/logs/rabbitmq*
 Nginx 虚拟主机配置文件：*/etc/nginx/conf.d/default.conf*  
 Nginx 主配置文件： */etc/nginx/nginx.conf*  
 Nginx 日志文件： */var/log/nginx*  
-Nginx 伪静态规则目录： */etc/nginx/conf.d/rewrite*
+Nginx 伪静态规则目录： */etc/nginx/conf.d/rewrite*  
+Nginx 验证访问文件：*/etc/nginx/.htpasswd/htpasswd.conf*  
 
 ### MySQL
 
