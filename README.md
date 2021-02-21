@@ -74,4 +74,4 @@ Get the RabbitMQ version from [RabbitMQ repository](https://github.com/apache/in
 
 #### Is the default password safe?
 
-RabbitMQ Cloud Installer use the random password solution, every installation have different password, that mean your password is different from other users
+The solution used the random password solution, every deployment produce unique password which is different from other users
