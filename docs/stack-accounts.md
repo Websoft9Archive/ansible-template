@@ -17,6 +17,8 @@ Here are the required username and password for RabbitMQ installation and config
 * MySQL administrator username: `root`
 * MySQL administrator password: Get it from the file of your server */credentials/password.txt*  
 
+> If you want to log in MySQL, refer to [MySQL Web interface Management](/admin-mysql.md)
+
 ## Linux
 
 * Host Name: Server's Internet IP or Public IP of your Instance
