@@ -48,7 +48,7 @@ Follow our [RabbitMQ image](https://apps.websoft9.com/rabbitmq) for installation
 
 ## Documentation
 
-To get information about initial installation, default username and password, HTTPS, SMTP, Backup, Upgrade and more, please view **RabbitMQ Administrator Guide** ([English](https://support.websoft9.com/docs/rabbitmq) | [简体中文](https://support.websoft9.com/docs/rabbitmq/zh))
+**RabbitMQ Administrator Guide** ([English](https://support.websoft9.com/docs/rabbitmq) | [简体中文](https://support.websoft9.com/docs/rabbitmq/zh))
 
 ## Changelog
 
