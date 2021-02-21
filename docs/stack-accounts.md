@@ -4,7 +4,7 @@ Use the **SSH** to connect your Server and run the command `sudo cat /credential
 
 ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/common/catdbpassword-websoft9.png)
 
-Here are the required username and password for RabbitMQ image installation and configuration.
+Here are the required username and password for RabbitMQ installation and configuration.
 
 ## RabbitMQ
 
