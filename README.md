@@ -48,7 +48,7 @@ Follow our [RabbitMQ image](https://apps.websoft9.com/rabbitmq) for installation
 
 ## Documentation
 
-**RabbitMQ Administrator Guide** ([English](https://support.websoft9.com/docs/rabbitmq) | [简体中文](https://support.websoft9.com/docs/rabbitmq/zh))
+**[Administrator Guide](https://support.websoft9.com/docs/rabbitmq)** 
 
 ## Changelog
 
