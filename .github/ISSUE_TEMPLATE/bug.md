@@ -4,6 +4,10 @@ about: Report a bug encountered while using websoft9's product
 labels: bug
 ---
 
+**Describe the bug**
+
+A clear and concise description of what the bug is.
+
 ## The deployment method for this application
 
 - [ ] subscription image from MarketPlace of Cloud
