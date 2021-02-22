@@ -64,7 +64,7 @@ Steps to reproduce the behavior:
 
 ### Bug Context
 
-Bug context is very important for resolving bug, please copy your bug error and paste here to us. And we need you provide service status and error logs.
+Bug context includes bug error, error logs and service status, it is very important for resolving issue
 
 ```
 # bug error
