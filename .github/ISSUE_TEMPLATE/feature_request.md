@@ -7,6 +7,11 @@ assignees: ''
 
 ---
 
+**What type of your feature request?**
+
+- [ ] Add new features
+- [ ] Improve current features
+
 **Is your feature request related to a problem? Please describe.**
 A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
 
