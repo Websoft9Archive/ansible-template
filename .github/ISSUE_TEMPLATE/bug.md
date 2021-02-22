@@ -4,9 +4,38 @@ about: Report a bug encountered while using websoft9's product
 labels: bug
 ---
 
+## The deployment method for this application
+
+- [ ] subscription image from MarketPlace of Cloud
+- [ ] All-in-one Installer
+- [ ] ansible-playbook cli
+- [ ] mcloud
+- [ ] create instance from private image
+
+## Bug source
+
+- [ ] Bugs from installation 
+- [ ] Bugs from first use
+- [ ] Other (You should describe it)   
+
 ## The environment on Reappearing Bug
 
-**PlatForm**
+**Application Version**
+
+e.g v4.5
+
+**OS**
+
+- [ ] Ubuntu18.x
+- [ ] Ubuntu20.x
+- [ ] CentOS7.x
+- [ ] CentOS8.x
+- [ ] AmazonLinux2
+- [ ] OracleLinux7.8
+- [ ] OracleLinux8.2
+- [ ] Other (You should describe it) 
+
+**Cloud PlatForm**
 
 - [ ] Azure
 - [ ] Aws
@@ -15,47 +44,33 @@ labels: bug
 - [ ] 华为云
 - [ ] AlibabaCloud
 - [ ] HUWEICloud
+- [ ] Other (You should describe it) 
 
-**OS**
+## Bug reports
 
-- [ ] Ubuntu18.04
-- [ ] Ubuntu20.04
-- [ ] CentOS7.8
-- [ ] CentOS7.9
-- [ ] CentOS8.2
-- [ ] AmazonLinux2
-- [ ] OracleLinux7.8
-- [ ] OracleLinux8.2
+### Bug Context
 
-**Way of Test**
+Bug context is very important for resolving bug, please copy it and paste here
 
-- [ ] Buy a product On Cloud Market
-- [ ] Test by websoft9 upload images
-- [ ] 镜像制作机
-- [ ] local virtual machine
-
-
-## Steps to reproduce the bug
-
-1. access index page 
-2. use random password login
-3. click 【setting】, show error
-
-
-## Context information (for bug reports)
-
-**Output error of `shell`**
+**Output error of**
 ```
-(paste here)
+(paste here) 
 ```
-**Output error of `logs`**
+
+We need you try the fllowing command and paste the output below
+
+**Output **
 ```
 (paste here)
 ```
 
-## Print Screen of the bug
+### Bug Screenshot
+
 
 ## The reason of Bug
 
-mysql version should be >5.7 
+You can describe the reason if you have found it
 
+## Your solution for Bug
+
+You can describe the your solution here
