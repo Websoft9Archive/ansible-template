@@ -8,7 +8,7 @@ labels: bug
 
 A clear and concise description of what the bug is.
 
-## The deployment method for this application
+## Deployment method
 
 - [ ] subscription image from MarketPlace of Cloud
 - [ ] All-in-one Installer
@@ -22,7 +22,7 @@ A clear and concise description of what the bug is.
 - [ ] Bugs from first use
 - [ ] Other (You should describe it)   
 
-## The environment on Reappearing Bug
+## System Environment
 
 **Application Version**
 
@@ -50,31 +50,47 @@ e.g v4.5
 - [ ] HUWEICloud
 - [ ] Other (You should describe it) 
 
+
+## Bug reproduce
+
+Steps to reproduce the behavior:
+
+1. Go to '...'
+2. Click on '....'
+3. Scroll down to '....'
+4. See error
+
 ## Bug reports
 
 ### Bug Context
 
-Bug context is very important for resolving bug, please copy it and paste here
+Bug context is very important for resolving bug, please copy your bug error and paste here to us. And we need you provide service status and error logs.
 
-**Output error of**
 ```
+# bug error
 (paste here) 
-```
 
-We need you try the fllowing command and paste the output below
+# service status 
+(paste here) 
 
-**Output **
-```
-(paste here)
+# error logs
+(paste here) 
 ```
 
 ### Bug Screenshot
 
+paste screenshot here
 
-## The reason of Bug
+## Your opinion
+
+**The reason of Bug**
 
 You can describe the reason if you have found it
 
-## Your solution for Bug
+**Your solution for Bug**
 
 You can describe the your solution here
+
+**Additional context**
+
+Add any other context about the problem here.
