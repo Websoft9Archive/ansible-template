@@ -16,6 +16,7 @@ Provide us with documentation errors, e.g spelling mistake, wrong screenshot, co
 
 * URL: 
 * Description: 
+* Screenshot
 
 ## Content optimization
 
