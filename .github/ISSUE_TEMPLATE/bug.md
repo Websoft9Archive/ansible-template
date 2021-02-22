@@ -81,7 +81,7 @@ Bug context is very important for resolving bug, please copy your bug error and 
 
 paste screenshot here
 
-## Your opinion
+## Your suggestion
 
 **The reason of Bug**
 
@@ -89,8 +89,8 @@ You can describe the reason if you have found it
 
 **Your solution for Bug**
 
-You can describe the your solution here
+You can describe your solution here
 
 **Additional context**
 
-Add any other context about the problem here.
+You can add any other context about the problem here.
