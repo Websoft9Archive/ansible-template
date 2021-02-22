@@ -1,3 +1,9 @@
+---
+name: Bug report
+about: Report a bug encountered while using websoft9's product
+labels: bug
+---
+
 ## The environment on Reappearing Bug
 
 **PlatForm**
