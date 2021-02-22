@@ -10,7 +10,7 @@ labels: documentation
 - [ ] Chinese
 - [ ] English
 
-## Content Error
+## Content error
 
 Provide us with documentation errors, e.g spelling mistake, wrong screenshot, code syntax error.
 
