@@ -1,3 +1,9 @@
+---
+name: Enhancement report
+about: add a new feature or improve current feature
+labels: feature
+---
+
 ## The kind of enhancement
 
 - [ ] Add new features
