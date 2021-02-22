@@ -1,9 +1,10 @@
 ---
 name: Bug report
 about: Report a bug encountered while using
-OS: centos7
-Cloud: azure
-version: v1.0.5
+title: ''
+labels: ''
+assignees: ''
+
 ---
 
 ## Steps to reproduce the bug
@@ -28,5 +29,4 @@ version: v1.0.5
 
 ## The reason of conjecture
 
-mysql version should be >5.7 
-
+mysql version should be >5.7
