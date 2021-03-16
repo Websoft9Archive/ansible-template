@@ -70,7 +70,7 @@ Yes.
 
 #### How to install and view the latest release?
 
-Get the RabbitMQ version from [RabbitMQ repository](https://github.com/apache/incubator-rabbitmq/releases), and modify the Ansible variable **[rabbitmq_version](/roles/ansible/rabbitmq/defaults/main.yml)** to change the RabbitMQ version for this repository. 
+Get the RabbitMQ version from [RabbitMQ repository](https://github.com/apache/incubator-rabbitmq/releases), and modify the Ansible variable **[rabbitmq_version](/roles/rabbitmq/defaults/main.yml)** to change the RabbitMQ version for this repository. 
 
 #### Is the default password safe?
 
