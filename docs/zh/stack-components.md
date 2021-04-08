@@ -8,6 +8,13 @@ RabbitMQ 预装包包含 RabbitMQ 运行所需一序列支撑软件（简称为�
 
 ## 路径
 
+本部署方案中的 RabbitMQ 采用 Docker 部署，运行 `docker ps` 查看运行的容器。
+```
+CONTAINER ID   IMAGE                           COMMAND                  CREATED              STATUS                PORTS                               NAMES
+4ff55aec7671   redmine                         "/docker-entrypoint.…"   11 seconds ago       Up 10 seconds         0.0.0.0:9010->3000/tcp              redmine
+3067c535663b   mysql:5.7                       "docker-entrypoint.s…"   About a minute ago   Up 58 seconds         33060/tcp, 0.0.0.0:3309->3306/tcp   redmine-mysql
+```
+
 ### RabbitMQ
 
 RabbitMQ 安装目录： */data/rabbitmq*  
@@ -73,6 +80,9 @@ java -v
 
 # Docker Version
 docker -v
+
+# MySQL version
+docker inspect redmine-mysql | grep "MYSQL_VERSION"
 
 # erlang  Version
 yum info erlang
