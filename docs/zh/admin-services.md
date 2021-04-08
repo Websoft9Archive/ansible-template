@@ -23,6 +23,15 @@ sudo systemctl restart mysql
 sudo systemctl status mysql
 ```
 
+### MySQL on Docker
+
+```shell
+sudo docker start redmine-mysql
+sudo docker restart redmine-mysql
+sudo docker stop redmine-mysql
+sudo docker stats redmine-mysql
+```
+
 ### Redis
 
 ```shell
@@ -50,7 +59,7 @@ sudo systemctl stop docker
 sudo systemctl status docker
 ```
 
-### Docker-compose服务
+### Docker-compose 服务
 
 ```
 #创建容器编排
