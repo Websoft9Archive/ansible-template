@@ -4,6 +4,8 @@ The RabbitMQ deployment package contains a sequence of software (referred to as 
 
 ## Path
 
+This solution use Docker to deploy all service, you can run the command `docker ps` to list them  
+
 ### RabbitMQ
 
 RabbitMQ installation directory:  */data/rabbitmq*  
