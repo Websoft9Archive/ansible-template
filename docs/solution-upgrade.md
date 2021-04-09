@@ -26,4 +26,22 @@ sudo yum update -y --skip-broken
 
 ## Upgrade RabbitMQ
 
+This deployment solution is based on Docker and so you can upgrade RabbitMQ by the standard process of Docker:  
+
+> You should complete a snapshot backup before upgrade
+
+1. Use **SSH** to login Server, cd to the directory of docker-compose file, then pull images
+   ```
+   cd /data/wwwroot/rabbitmq
+   docker-compose pull
+   ```
+2. Stop the containers
+   ```
+   docker-compose down -v
+   ```
+3. Recreate containers
+   ```
+   docker-compose up -d
+   ```
+
 Refer to the official docs: [Upgrading RabbitMQ](https://www.rabbitmq.com/upgrade.html)
