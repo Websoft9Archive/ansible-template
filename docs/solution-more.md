@@ -24,6 +24,11 @@ Steps for binding RabbitMQ domain are as follows:
    ...
    }
    ```
+3. Restart Nginx service
+   ```
+   sudo systemctl restart nginx
+   ```
+
 ## Resetting Password
 
 There are two main measures to reset password.
