@@ -32,6 +32,19 @@ MySQL Web Management refer to [MySQL Management](/admin-mysql.md)
 MySQL data directory: */data/db/mysql*  
 MySQL Web Management refer to [MySQL Management](/admin-mysql.md)
 
+### MongoDB
+
+MongoDB data directory: */var/lib/mongodb*  
+MongoDB Configuration File:  */etc/mongod.conf*  
+MongoDB logs File:  */var/log/mongodb*  
+
+### adminMongo
+
+adminMongo is a visual MongoDB management tool, is installed based on docker.  
+
+Docker root directory: */var/lib/docker*  
+Docker image directory: */var/lib/docker/image*  
+
 ### Docker
 
 Docker root directory: */var/lib/docker*  
