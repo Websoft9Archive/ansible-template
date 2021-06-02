@@ -22,26 +22,23 @@ yum update -y --skip-broken
 > 本部署包已预配置一个用于自动更新的计划任务。如果希望去掉自动更新，请删除对应的Cron
 
 
-## RabbitMQ升级
+## RabbitMQ 升级
 
-RabbitMQ 采用 Docker 部署，其升级流程：拉取镜像 > 删除容器 > 重建容器
+RabbitMQ 基于 Docker 部署，其升级流程：拉取镜像 > 删除容器 > 重建容器
 
-> 升级之前请完成服务器的快照备份，以防不测。
+> 升级之前请确保您已经完成了服务器的镜像（快照）备份
 
-1. 使用 SSH 登录服务，进入到 RabbitMQ 目录后，拉取最新版本镜像
+1. 登录服务器，编辑 */data/wwwroot/rabbitmq/.env* 文件，将版本变量的值修改为目标版本号
+
+2. 拉取目标版本的镜像
    ```
    cd /data/wwwroot/rabbitmq
    docker-compose pull
    ```
-   > 系统会自动拉取最新版镜像，如果没有镜像可拉取，则无需更新
+   > 如果显示没有镜像可拉取，则无需升级
 
-2. 停止并删除当前的 RabbitMQ 容器
-
-   ```
-   docker-compose down -v
-   ```
-
-3. 重新创建 RabbitMQ 容器
-   ```
-   docker-compose up -d
-   ```
+3. 删除旧容器，重新创建 RabbitMQ 容器
+    ```
+    docker-compose down -v
+    docker-compose up -d
+    ```
