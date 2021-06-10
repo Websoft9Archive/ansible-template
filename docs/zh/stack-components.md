@@ -20,6 +20,13 @@ CONTAINER ID   IMAGE                           COMMAND                  CREATED 
 RabbitMQ 安装目录： */data/rabbitmq*  
 RabbitMQ 日志目录： */data/logs/rabbitmq*  
 
+### Apache
+
+Apache 虚拟主机配置文件：*/etc/httpd/conf.d/vhost.conf*  
+Apache 主配置文件： */etc/httpd/conf/httpd.conf*  
+Apache 日志文件： */var/log/httpd*  
+Apache 模块配置文件： */etc/httpd/conf.modules.d/00-base.conf*
+
 ### Nginx
 
 Nginx 虚拟主机配置文件：*/etc/nginx/conf.d/default.conf*  
@@ -51,7 +58,7 @@ MongoDB 日志文件: */var/log/mongodb*
 
 ### adminMongo on Docker
 
-adminMongo 采用 Docker 安装
+adminMongo 是一款可视化 MongoDB 管理工具，采用 Docker 安装
 
 Docker 根目录: */var/lib/docker*  
 Docker 镜像目录: */var/lib/docker/image*  
@@ -61,6 +68,12 @@ Docker 镜像目录: */var/lib/docker/image*
 Docker 根目录: */var/lib/docker*  
 Docker 镜像目录: */var/lib/docker/image*   
 Docker daemon.json 文件：默认没有创建，请到 */etc/docker* 目录下根据需要自行创建   
+
+### Redis
+
+Redis 配置文件： */etc/redis.conf*  
+Redis 数据目录： */var/lib/redis*  
+Redis 日志文件： */var/log/redis/redis.log*
 
 ## 端口号
 
