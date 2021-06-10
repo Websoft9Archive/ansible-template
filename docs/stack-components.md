@@ -11,6 +11,13 @@ This solution use Docker to deploy all service, you can run the command `docker 
 RabbitMQ installation directory:  */data/rabbitmq*  
 RabbitMQ logs directory:  */data/logs/rabbitmq*  
 
+### Apache
+
+Apache vhost configuration file: */etc/httpd/conf.d/vhost.conf*    
+Apache main configuration file: */etc/httpd/conf/httpd.conf*   
+Apache logs file: */var/log/httpd*  
+Apache module configuration file: */etc/httpd/conf.modules.d/00-base.conf*   
+
 ### Nginx
 
 Nginx vhost configuration file: */etc/nginx/conf.d/default.conf*    
@@ -32,6 +39,13 @@ MySQL Web Management refer to [MySQL Management](/admin-mysql.md)
 MySQL data directory: */data/db/mysql*  
 MySQL Web Management refer to [MySQL Management](/admin-mysql.md)
 
+###  phpMyAdmin
+
+phpMyAdmin is a visual MySQL management tool, is installed based on docker.  
+
+phpMyAdmin directory：*/data/apps/phpmyadmin*  
+phpMyAdmin docker compose file：*/data/apps/phpmyadmin/docker-compose.yml* 
+
 ### MongoDB
 
 MongoDB data directory: */var/lib/mongodb*  
@@ -51,12 +65,11 @@ Docker root directory: */var/lib/docker*
 Docker image directory: */var/lib/docker/image*   
 Docker daemon.json: please create it when you need and save to to the directory */etc/docker*   
 
-###  phpMyAdmin
+### Redis
 
-phpMyAdmin is a visual MySQL management tool, is installed based on docker.  
-
-phpMyAdmin directory：*/data/apps/phpmyadmin*  
-phpMyAdmin docker compose file：*/data/apps/phpmyadmin/docker-compose.yml* 
+Redis configuration file: */etc/redis.conf*  
+Redis data directory: */var/lib/redis*  
+Redis logs file: */var/log/redis/redis.log*
 
 ## Ports
 
