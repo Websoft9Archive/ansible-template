@@ -43,6 +43,19 @@ phpMyAdmin 是一款可视化 MySQL 管理工具，在本项目中它基于 Dock
 phpMyAdmin directory：*/data/apps/phpmyadmin*  
 phpMyAdmin docker compose file：*/data/apps/phpmyadmin/docker-compose.yml* 
 
+### MongoDB
+
+MongoDB 数据目录: */var/lib/mongodb*  
+MongoDB 配置文件: */etc/mongod.conf*  
+MongoDB 日志文件: */var/log/mongodb*  
+
+### adminMongo on Docker
+
+adminMongo 采用 Docker 安装
+
+Docker 根目录: */var/lib/docker*  
+Docker 镜像目录: */var/lib/docker/image*  
+
 ### Docker
 
 Docker 根目录: */var/lib/docker*  
