@@ -10,7 +10,7 @@ If you have completed the RabbitMQ deployment, follow the steps below to start a
 
 ## RabbitMQ Installation Wizard
 
-1. Use local Chrome or Firefox to access the URL *http://DNS:15672* or *http://Server's Server's Internet IP:15672*. You will enter installation wizard of RabbitMQ.
+1. Use local Chrome or Firefox to access the URL *http://DNS:15672* or *http://Server's Internet IP:15672*. You will enter installation wizard of RabbitMQ.
    ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/rabbitmq/rabbitmq-login-websoft9.png)
 
 2. Log in RabbitMQ web console. ([Don't have password?](/stack-accounts.md#rabbitmq)) 
