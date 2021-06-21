@@ -36,8 +36,8 @@ MySQL Web Management refer to [MySQL Management](/admin-mysql.md)
 
 ### MySQL on Docker
 
-MySQL data directory: */data/db/mysql*  
-MySQL Web Management refer to [MySQL Management](/admin-mysql.md)
+MySQL data directory: */data/db/mysql/data*  
+MySQL log directory: */data/db/mysql/logs*  
 
 ###  phpMyAdmin
 
@@ -45,6 +45,26 @@ phpMyAdmin is a visual MySQL management tool, is installed based on docker.
 
 phpMyAdmin directory：*/data/apps/phpmyadmin*  
 phpMyAdmin docker compose file：*/data/apps/phpmyadmin/docker-compose.yml* 
+
+### PostgreSQL
+
+PostgreSQL data directory: */data/postgresql/pgdata*  
+PostgreSQL configuration directory: */data/postgresql/config*  
+PostgreSQL logs directory: */data/postgresql/log*  
+
+> The above list is the directory created by soft link, please query more file path information through commands like `locate pg_hba.conf`
+
+### PostgreSQL on Docker
+
+PostgreSQL data directory: */data/db/postgresql/data*  
+PostgreSQL data directory: */data/db/postgresql/logs*  
+
+### pgAdmin
+
+pgAdmin is a visual PostgreSQL management tool, is installed based on docker. 
+
+pgAdmin directory：*/data/apps/pgadmin*  
+pgAdmin docker compose file：*/data/apps/pgadmin/docker-compose.yml* 
 
 ### MongoDB
 
@@ -56,8 +76,8 @@ MongoDB logs File:  */var/log/mongodb*
 
 adminMongo is a visual MongoDB management tool, is installed based on docker.  
 
-Docker root directory: */var/lib/docker*  
-Docker image directory: */var/lib/docker/image*  
+adminMongo directory：*/data/apps/adminmongo*  
+adminMongo docker compose file：*/data/apps/adminmongo/docker-compose.yml* 
 
 ### Docker
 
