@@ -1,3 +1,7 @@
+---
+sidebarDepth: 3
+---
+
 # Parameters
 
 The RabbitMQ deployment package contains a sequence of software (referred to as "components") required for RabbitMQ to run. Below list the important information, the component name, installation directory path, configuration file path, port, version, etc.
