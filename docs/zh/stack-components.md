@@ -43,12 +43,36 @@ MySQL 配置文件: */etc/my.cnf*
 
 MySQL 可视化管理参考 [MySQL 管理](/zh/admin-mysql.md) 章节。
 
+### MySQL on Docker
+
+MySQL 数据目录 */data/db/mysql/data*  
+MySQL 日志目录: */data/db/mysql/log* 
+MySQL 配置文件：*/data/db/mysql/config/conf.d*  
+
 ### phpMyAdmin
 
 phpMyAdmin 是一款可视化 MySQL 管理工具，在本项目中它基于 Docker 安装。  
 
 phpMyAdmin directory：*/data/apps/phpmyadmin*  
 phpMyAdmin docker compose file：*/data/apps/phpmyadmin/docker-compose.yml* 
+
+#### PostgreSQL
+
+PostgreSQL 配置文件: */data/postgresql/config*   
+PostgreSQL 数据目录：*/data/postgresql/pgdata*   
+PostgreSQL 日志目录: */data/postgresql/log*  
+
+### PostgreSQL on Docker
+
+PostgreSQL 数据目录：*/data/db/postgresql/data*  
+PostgreSQL 日志目录: */data/db/postgresql/log*  
+
+### pgAdmin
+
+pgAdmin 是官方出品的可视化 PostgreSQL 管理工具，采用 Docker 安装
+
+pgAdmin 存储目录: */data/apps/pgadmin*  
+pgAdmin 配置文件: */data/apps/pgadmin/.env*  
 
 ### MongoDB
 
