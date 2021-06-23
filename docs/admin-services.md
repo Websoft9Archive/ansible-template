@@ -23,37 +23,61 @@ sudo systemctl restart mysql
 sudo systemctl status mysql
 ```
 
+### MySQL on Docker
+
+```shell
+sudo docker start redmine-mysql
+sudo docker restart redmine-mysql
+sudo docker stop redmine-mysql
+sudo docker stats redmine-mysql
+```
+
 ### Redis
 
 ```shell
-sudo systemctl start redis
-sudo systemctl stop redis
-sudo systemctl restart redis
-sudo systemctl status redis
+systemctl start redis
+systemctl stop redis
+systemctl restart redis
+systemctl status redis
+```
+
+### phpMyAdmin
+
+```shell
+sudo docker start phpmyadmin
+sudo docker stop phpmyadmin
+sudo docker restart phpmyadmin
+sudo docker stats pgadmin
 ```
 
 ### Docker
+
 ```shell
 sudo systemctl start docker
-sudo systemctl stop docker
 sudo systemctl restart docker
+sudo systemctl stop docker
 sudo systemctl status docker
 ```
 
-### phpMyAdmin on Docker
-```shell
-sudo docker inspect phpmyadmin
-sudo docker start phpmyadmin
-sudo docker restart phpmyadmin
-sudo docker stop phpmyadmin
-sudo docker rm phpmyadmin
+### Docker-Compose
+```
+# Create Containers
+sudo docker-compose up -d
+
+# Remove Containers
+sudo docker-compose up -d
+
+# Start/Stop/Restart Containers
+sudo docker-compose start
+sudo docker-compose stop
+sudo docker-compose restart
 ```
 
-### ONLYOFFICE Document Server on Docker
+### Nginx
+
 ```shell
-sudo docker inspect onlyofficedocumentserver
-sudo docker start onlyofficedocumentserver
-sudo docker restart onlyofficedocumentserver
-sudo docker stop onlyofficedocumentserver
-sudo docker rm onlyofficedocumentserver
+sudo systemctl start nginx
+sudo systemctl stop nginx
+sudo systemctl restart nginx
+sudo systemctl status nginx
 ```
