@@ -25,7 +25,7 @@ To learn more information, please view [Installation & Configuration](https://ww
 
 Core components of this repository: RabbitMQ, MySQL8.0, MongoDB, adminMongo on Docker, phpMyAdmin on Docker, Nginx or Apache(optional)
 
-the extral compentents: chanzhi, cmseasy, codiad, dolibarr, dreamfactory
+the extral compentents: chanzhi, cmseasy, codiad, dolibarr, dreamfactory.  
 Learn more about [Parameters](/docs/stack-components.md).
 
 ## How to install and view the latest release?

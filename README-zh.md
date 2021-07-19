@@ -22,7 +22,7 @@
 
 包含的核心组件为：RabbitMQ，MySQL8.0，MongoDB，adminMongo on Docker，phpMyAdmin on Docker，Nginx or Apache（可选）  
 
-额外的相关应用组件为chanzhi，cmseasy，codiad，dolibarr, dreamfactory
+额外的相关应用组件为chanzhi，cmseasy，codiad，dolibarr, dreamfactory。  
 更多请见 [参数表](/docs/zh/stack-components.md)
 
 ## 本项目安装的是 RabbitMQ 最新版吗？
