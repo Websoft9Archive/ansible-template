@@ -15,11 +15,11 @@
   "components_extra_en": "the extral compentents: chanzhi, cmseasy, codiad, dolibarr, dreamfactory",
   "components_extra_zh": "额外的相关应用组件为chanzhi，cmseasy，codiad，dolibarr, dreamfactory",
   "install_way_en": "Package isntallation | Compile isntallation for source | Isntallation for download binaries files",
-  "install_way_zh": "包安装 | 下载源码编译安装 | 下载可执行二进制包安装",
+  "install_way_zh": "包安装 | 下载源码编译安装 | 下载可执行二进制包解压安装",
   "install_url": "https://www.rabbitmq.com/download.html",
   "release_url": "https://github.com/Websoft9/ansible-rabbitmq/releases",
   "release_extra_zh": "阅读应用的[版本号管理](version.md)文档，了解更多详情。",
-  "release_extra_en": "阅读应用的[版本号管理](version.md)文档，了解更多详情。",
+  "release_extra_en": "Learn more about [Version](version.md).",
   "faqs": [
     {
       "question_cn": "问题1",

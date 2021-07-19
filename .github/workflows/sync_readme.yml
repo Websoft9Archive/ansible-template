@@ -73,6 +73,7 @@ jobs:
                   ansible-sqlite
                   ansible-superset
                   ansible-tensorflow
+                  ansible-template
                   ansible-webmin
                   ansible-wordpress
                   ansible-zabbix
