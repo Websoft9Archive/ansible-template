@@ -33,7 +33,7 @@ Learn more about [Parameters](/docs/stack-components.md).
 This repository install way is Package isntallation | Compile isntallation for source | Isntallation for download binaries files, you can  view the version from [Official URL] (https://www.rabbitmq.com/download.html).  
 We will check [Release version](https://github.com/Websoft9/ansible-rabbitmq/releases) regularly. Update and test this project to ensure that users can successfully install the required version of RabbitMQ.
 
-阅读应用的[版本号管理](version.md)文档，了解更多详情。
+Learn more about [Version](version.md).
 ## Installation
 
 You can install it by thi Cloud Installer solution all in one. In addition, you can deploy image published on major Cloud Platform by Websoft9.
