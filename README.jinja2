@@ -31,15 +31,6 @@ Core components of this repository: {{ components.en }}
 
 Learn more about [Parameters](/docs/stack-components.md).
 
-## How to install and view the latest release?
-
-This repository install way is {{install_way.en}}, you can  view the version from [Official URL] ({{install_url}}).  
-We will check [Release version](https://github.com/Websoft9/ansible-{{name}}/releases) regularly. Update and test this project to ensure that users can successfully install the required version of {{trademark}}.
-
-{% if release_extra is defined -%}
-{{release_extra.en}}
-{% endif -%}
-
 ## Installation
 
 You can install it by thi Cloud Installer solution all in one. In addition, you can deploy image published on major Cloud Platform by Websoft9.
@@ -73,6 +64,15 @@ This program provided by Websoft9 contains a series of software with separate co
 
 ## FAQ
 
+#### How to install and view the latest release?
+
+This repository install way is {{install_way.en}}, you can  view the version from [Official URL] ({{install_url}}).  
+We will check [Release version](https://github.com/Websoft9/ansible-{{name}}/releases) regularly. Update and test this project to ensure that users can successfully install the required version of {{trademark}}.
+
+{% if release_extra is defined -%}
+{{release_extra.en}}
+{% endif -%}
+
 #### Can I run this repository on Ansible Tower? 
 
 Yes.
@@ -82,6 +82,6 @@ Yes.
 Suggest you read the document [Deploy by Image vs Deploy by Script](https://support.websoft9.com/docs/faq/bz-product.html#deployment-comparison)
 
 {% for faq in faqs -%}
-#### {{faq.question_en}}  
-{{faq.question_en}}  
+#### {{faq.question.en}}  
+{{faq.question.en}}  
 {% endfor -%}  

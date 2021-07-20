@@ -16,7 +16,7 @@
 | 私有云|  KVM, VMware, VirtualBox, OpenStack | 可选 |
 | 服务器配置 | 最低{{requirements_cpu}}核{{requirements_memory}}G，存储{{requirements_disk}}GB以上，Swap分区{{requirements_swap}}GB以上 |  建议采用按量{{requirements_Bandwidth}}M带宽 |
 
-更多请见 [官方 System requirement]({{requirements_configure_url}})
+更多请见： [官方 System requirement]({{requirements_configure_url}})
 
 ## 组件
 
@@ -27,15 +27,6 @@
 {% endif -%}
   
 更多请见 [参数表](/docs/zh/stack-components.md)
-
-## 本项目安装的是 {{ trademark }} 最新版吗？
-
-本项目通过{{ install_way.zh }}，请通过[官方URL]({{ install_url }})页面查看版本号。  
-我们会定期检查[Release版本](https://github.com/Websoft9/ansible-{{name}}/releases)，更新并测试此项目，以保证用户可以顺利安装所需的{{ trademark }}版本。 
- 
-{% if release_extra is defined -%}
-{{release_extra.zh}}
-{% endif -%}
 
 ## 安装指南
 
@@ -65,6 +56,15 @@ wget -N https://ghproxy.com/https://raw.githubusercontent.com/Websoft9/ansible-l
 
 ## FAQ
 
+#### 本项目安装的是 {{ trademark }} 最新版吗？
+
+本项目通过{{ install_way.zh }}，请通过[官方URL]({{ install_url }})页面查看版本号。  
+我们会定期检查[Release版本](https://github.com/Websoft9/ansible-{{name}}/releases)，更新并测试此项目，以保证用户可以顺利安装所需的{{ trademark }}版本。 
+ 
+{% if release_extra is defined -%}
+{{release_extra.zh}}
+{% endif -%}
+
 #### 命令脚本部署与镜像部署有什么区别？
 
 请参考：[镜像部署-vs-脚本部署](https://support.websoft9.com/docs/faq/zh/bz-product.html#镜像部署-vs-脚本部署)
@@ -73,6 +73,6 @@ wget -N https://ghproxy.com/https://raw.githubusercontent.com/Websoft9/ansible-l
 支持
 
 {% for faq in faqs -%}
-#### {{faq.question_cn}}  
-{{faq.answer_cn}}  
+#### {{faq.question.zh}}  
+{{faq.answer.zh}}  
 {% endfor -%}  

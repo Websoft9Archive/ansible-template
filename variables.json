@@ -32,11 +32,25 @@
   },
   "faqs": [
     {
-      "question_cn": "问题1",
-      "answer_cn": "答案1",
-      "question_en": "question1",
-      "answer_en": "answer1"
+      "question": {
+        "en": "Why add this question？",
+        "zh": "为什么要追加问题1？"
+      },
+      "answer": {
+        "en": "This is a good question, it can make humans feedoom!",
+        "zh": "这是指一个范例，没什么特别的。"
+      }
     },
+    {
+      "question": {
+        "en": "Why add this question2？",
+        "zh": "为什么要追加问题2？"
+      },
+      "answer": {
+        "en": "This is a good question2, it can make humans feedoom!",
+        "zh": "这是一个好问题。"
+      }
+    }
 
     {
       "question_cn": "问题2",
