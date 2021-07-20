@@ -28,12 +28,6 @@ Core components of this repository: RabbitMQ, MySQL8.0, MongoDB, adminMongo on D
 the extral compentents: chanzhi, cmseasy, codiad, dolibarr, dreamfactory. 
 Learn more about [Parameters](/docs/stack-components.md).
 
-## How to install and view the latest release?
-
-This repository install way is Package isntallation | Compile isntallation for source | Isntallation for download binaries files , you can  view the version from [Official URL] (https://www.rabbitmq.com/download.html).  
-We will check [Release version](https://github.com/Websoft9/ansible-rabbitmq/releases) regularly. Update and test this project to ensure that users can successfully install the required version of RabbitMQ.
-
-Learn more about [Version](version.md).
 ## Installation
 
 You can install it by thi Cloud Installer solution all in one. In addition, you can deploy image published on major Cloud Platform by Websoft9.
@@ -67,15 +61,21 @@ This program provided by Websoft9 contains a series of software with separate co
 
 ## FAQ
 
+#### How to install and view the latest release?
+
+This repository install way is Package isntallation | Compile isntallation for source | Isntallation for download binaries files , you can  view the version from [Official URL] (https://www.rabbitmq.com/download.html).  
+We will check [Release version](https://github.com/Websoft9/ansible-rabbitmq/releases) regularly. Update and test this project to ensure that users can successfully install the required version of RabbitMQ.
+
+Learn more about [Version](version.md).
 #### Can I run this repository on Ansible Tower? 
 
 Yes.
 
 #### Although the results of the deploy by image are consistent with the results of deploy by script, what is the difference between the two deployment methods?
 
-Suggest you read the document [Deploy by Image vs Deploy by Script](https://support.websoft9.com/docs/faq/bz-product.html#deployment-comparison)
+Suggest you read the document [Deploy by Image vs Deploy by Script](https://support.websoft9.com/docs/faq/bz-product.html#deployment-comparison).
 
-#### question1  
-question1  
-#### question2  
-question2  
+#### Why add this question？  
+Why add this question？  
+#### Why add this question2？  
+Why add this question2？  
