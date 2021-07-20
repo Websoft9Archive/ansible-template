@@ -25,12 +25,12 @@ To learn more information, please view [Installation & Configuration](https://ww
 
 Core components of this repository: RabbitMQ, MySQL8.0, MongoDB, adminMongo on Docker, phpMyAdmin on Docker, Nginx or Apache(optional)
 
-the extral compentents: chanzhi, cmseasy, codiad, dolibarr, dreamfactory.  
+the extral compentents: chanzhi, cmseasy, codiad, dolibarr, dreamfactory. 
 Learn more about [Parameters](/docs/stack-components.md).
 
 ## How to install and view the latest release?
 
-This repository install way is Package isntallation | Compile isntallation for source | Isntallation for download binaries files, you can  view the version from [Official URL] (https://www.rabbitmq.com/download.html).  
+This repository install way is Package isntallation | Compile isntallation for source | Isntallation for download binaries files , you can  view the version from [Official URL] (https://www.rabbitmq.com/download.html).  
 We will check [Release version](https://github.com/Websoft9/ansible-rabbitmq/releases) regularly. Update and test this project to ensure that users can successfully install the required version of RabbitMQ.
 
 Learn more about [Version](version.md).
