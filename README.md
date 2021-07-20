@@ -8,6 +8,7 @@
 
 **RabbitMQ Cloud Installer**, developed by [Websoft9](https://www.websoft9.com), is an automatic installation program of [RabbitMQ](https://rabbitmq.io/) based on Ansible and shell. It helps user install RabbitMQ and pre-configure required items automatically and users only need to run a command on Linux. It simplifies the complicated installation and initialization process.  
 
+CentOS7.x, Ubuntu20.04, Amazon Linux2
 ## System Requirement
 
 System Requirement to install this repository are as following：
