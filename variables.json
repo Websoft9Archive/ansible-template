@@ -12,16 +12,24 @@
   "requirements_disk": "20",
   "requirements_swap": "2",
   "requirements_configure_url": "https://www.rabbitmq.com/download.html",
-  "components_en": "RabbitMQ, MySQL8.0, MongoDB, adminMongo on Docker, phpMyAdmin on Docker, Nginx or Apache(optional)",
-  "components_zh": "RabbitMQ，MySQL8.0，MongoDB，adminMongo on Docker，phpMyAdmin on Docker，Nginx or Apache（可选）",
-  "components_extra_en": "the extral compentents: chanzhi, cmseasy, codiad, dolibarr, dreamfactory.  ",
-  "components_extra_zh": "额外的相关应用组件为chanzhi，cmseasy，codiad，dolibarr, dreamfactory。  ",
-  "install_way_en": "Package isntallation | Compile isntallation for source | Isntallation for download binaries files",
-  "install_way_zh": "包安装 | 下载源码编译安装 | 下载可执行二进制包解压安装",
+  "components": {
+    "en": "RabbitMQ, MySQL8.0, MongoDB, adminMongo on Docker, phpMyAdmin on Docker, Nginx or Apache(optional)",
+    "zh": "RabbitMQ，MySQL8.0，MongoDB，adminMongo on Docker，phpMyAdmin on Docker，Nginx or Apache（可选）"
+  },
+  "components_extra": {
+    "en": "the extral compentents: chanzhi, cmseasy, codiad, dolibarr, dreamfactory. ",
+    "zh": "额外的相关应用组件为chanzhi，cmseasy，codiad，dolibarr, dreamfactory。"
+  },
+  "install_way": {
+    "en": "Package isntallation | Compile isntallation for source | Isntallation for download binaries files ",
+    "zh": "包安装 | 下载源码编译安装 | 下载可执行二进制包解压安装"
+  },
   "install_url": "https://www.rabbitmq.com/download.html",
   "release_url": "https://github.com/Websoft9/ansible-rabbitmq/releases",
-  "release_extra_zh": "阅读应用的[版本号管理](version.md)文档，了解更多详情。",
-  "release_extra_en": "Learn more about [Version](version.md).",
+  "release_extra": {
+    "en": "Learn more about [Version](version.md).",
+    "zh": "阅读应用的[版本号管理](version.md)文档，了解更多详情。"
+  },
   "faqs": [
     {
       "question_cn": "问题1",
