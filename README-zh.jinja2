@@ -5,6 +5,10 @@
 
 本项目是由 [Websoft9](https://www.websoft9.com) 研发的 [{{ trademark }}]({{ official_url}}) 自动化安装程序，开发语言是 Ansible。使用本项目，只需要用户在 Linux 上运行一条命令，即可自动化安装 {{ trademark }}，并预配置必要项，让原本复杂的安装和与配置过程变得没有任何技术门槛。
 
+{% if introduction_extra is defined -%}
+{{introduction_extra.zh}}
+{% endif -%}
+
 ## 配置要求
 
 安装本项目，确保符合如下的条件：
