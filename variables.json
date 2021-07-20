@@ -4,7 +4,7 @@
   "official_url": "https://rabbitmq.io/",
   "support_os": {
      "en": "CentOS7.x, Ubuntu20.04, Amazon Linux2",
-     "zh": "CentOS7.x，Ubuntu20.04，Amazon Linux2",
+     "zh": "CentOS7.x，Ubuntu20.04，Amazon Linux2"
   },
   "requirements_cpu": "2",
   "requirements_memory": "4",
