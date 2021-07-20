@@ -76,6 +76,6 @@ Yes.
 Suggest you read the document [Deploy by Image vs Deploy by Script](https://support.websoft9.com/docs/faq/bz-product.html#deployment-comparison).
 
 #### Why add this question？  
-Why add this question？  
+This is a good question, it can make humans feedoom!  
 #### Why add this question2？  
-Why add this question2？  
+This is a good question2, it can make humans feedoom!  

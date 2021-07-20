@@ -16,14 +16,14 @@
 | 私有云|  KVM, VMware, VirtualBox, OpenStack | 可选 |
 | 服务器配置 | 最低2核4G，存储20GB以上，Swap分区2GB以上 |  建议采用按量100M带宽 |
 
-更多请见： [官方 System requirement](https://www.rabbitmq.com/download.html)
+更多请见： [官方 System requirement](https://www.rabbitmq.com/download.html)。
 
 ## 组件
 
 包含的核心组件为：RabbitMQ，MySQL8.0，MongoDB，adminMongo on Docker，phpMyAdmin on Docker，Nginx or Apache（可选）  
 
 额外的相关应用组件为chanzhi，cmseasy，codiad，dolibarr, dreamfactory。
-更多请见 [参数表](/docs/zh/stack-components.md)
+更多请见: [参数表](/docs/zh/stack-components.md)。
 
 ## 安装指南
 
