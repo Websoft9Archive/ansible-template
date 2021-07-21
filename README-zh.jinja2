@@ -76,7 +76,9 @@ wget -N https://ghproxy.com/https://raw.githubusercontent.com/Websoft9/ansible-l
 #### 本项目支持在 Ansible Tower 上运行吗
 支持
 
-{% for faq in faqs -%}
-#### {{faq.question.zh}}  
-{{faq.answer.zh}}  
+{% if faqs is defined -%}
+{% for faq in faqs.zh -%}
+#### {{faq.question}}  
+{{faq.answer}}  
 {% endfor -%}  
+{% endif -%}

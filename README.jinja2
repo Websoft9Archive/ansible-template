@@ -85,7 +85,9 @@ Yes.
 
 Suggest you read the document [Deploy by Image vs Deploy by Script](https://support.websoft9.com/docs/faq/bz-product.html#deployment-comparison).
 
-{% for faq in faqs -%}
-#### {{faq.question.en}}  
-{{faq.answer.en}}  
+{% if faqs is defined -%}
+{% for faq in faqs.en -%}
+#### {{faq.question}}  
+{{faq.answer}}  
 {% endfor -%}  
+{% endif -%}
