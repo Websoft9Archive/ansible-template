@@ -12,7 +12,7 @@
 
 | 条件       | 详情       | 备注  |
 | ------------ | ------------ | ----- |
-| 操作系统       | CentOS7.x，Ubuntu20.04，Amazon Linux2|  可选  |
+| 操作系统       | CentOS7.x, Ubuntu20.04, Amazon Linux2|  可选  |
 | 公有云| AWS, Azure, 阿里云, 华为云, 腾讯云 | 可选 |
 | 私有云|  KVM, VMware, VirtualBox, OpenStack | 可选 |
 | 服务器配置 | 最低2核4G，存储20GB以上，Swap分区2GB以上 |  建议采用按量100M带宽 |
@@ -21,7 +21,7 @@
 
 ## 组件
 
-包含的核心组件为：RabbitMQ，MySQL8.0，MongoDB，adminMongo on Docker，phpMyAdmin on Docker，Nginx or Apache（可选）  
+包含的核心组件为：RabbitMQ, MySQL8.0, MongoDB, adminMongo on Docker, phpMyAdmin on Docker, Nginx or Apache(optional)  
 
 额外的相关应用组件为chanzhi，cmseasy，codiad，dolibarr, dreamfactory。
 更多请见: [参数表](/docs/zh/stack-components.md)。
@@ -70,4 +70,4 @@ wget -N https://ghproxy.com/https://raw.githubusercontent.com/Websoft9/ansible-l
 #### 为什么要追加问题1？  
 这是指一个范例，没什么特别的。  
 #### 为什么要追加问题2？  
-这是一个好问题。  
+十万个为什么。  

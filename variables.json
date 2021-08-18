@@ -23,7 +23,6 @@
     "zh": "包安装 | 下载源码编译安装 | 下载可执行二进制包解压安装"
   },
   "install_url": "https://www.rabbitmq.com/download.html",
-  "release_url": "https://github.com/Websoft9/ansible-rabbitmq/releases",
   "release_extra": {
     "en": "Learn more about [Version](version.md).",
     "zh": "阅读应用的[版本号管理](version.md)文档，了解更多详情。"
