@@ -24,10 +24,10 @@
 * 管理员账号：不同的云平台有一定的差异
    |  云平台   | 系统 |  管理员账号名称 | 其他|
    | --- | --- | --- | --- |
-   |  Azure   |  所有 |  创建服务器的时候自行设置   | [如何开启root账户？](https://support.websoft9.com/docs/azure/zh/server-login.html#示例2：启用系统root账号) |
-   |  AWS   | CentOS |  centos   | [如何开启root账户？](https://support.websoft9.com/docs/aws/zh/server-login.html#示例2：启用系统root账号) |
-   |  AWS   | AmazonLinux | ec2-user   | [如何开启root账户？](https://support.websoft9.com/docs/aws/zh/server-login.html#示例2：启用系统root账号) |
-   |  AWS  | Ubuntu |  ubuntu   | [如何开启root账户？](https://support.websoft9.com/docs/aws/zh/server-login.html#示例2：启用系统root账号)  |
+   |  Azure   |  所有 |  创建服务器的时候自行设置   | [如何开启root账户？](https://support.websoft9.com/docs/azure/zh/server-login.html#示例2-启用系统root账号) |
+   |  AWS   | CentOS |  centos   | [如何开启root账户？](https://support.websoft9.com/docs/aws/zh/server-login.html#示例2-启用系统root账号) |
+   |  AWS   | AmazonLinux | ec2-user   | [如何开启root账户？](https://support.websoft9.com/docs/aws/zh/server-login.html#示例2-启用系统root账号) |
+   |  AWS  | Ubuntu |  ubuntu   | [如何开启root账户？](https://support.websoft9.com/docs/aws/zh/server-login.html#示例2-启用系统root账号)  |
    |  阿里云，华为云，腾讯云   |  所有 |  root   | |
    
 ## Windows
