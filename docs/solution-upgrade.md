@@ -3,7 +3,7 @@
 To update and upgrade is one of the main task for system maintenance. Like buildings without maintenance for a long time, programs without upgrading will age faster, lose functionality until they are unavailable.
 
 Get to know the differences between the terms **Update** and **Upgrade**([Extended reading](https://support.websoft9.com/docs/faq/tech-upgrade.html#update-vs-upgrade))
-- Patching operating system is **Updating**, while Ubuntu16.04 to Ubuntu18.04 means **Upgrading**.
+- Patching operating system is **Updating**, while Ubuntu 20.04 to Ubuntu 21.04 means **Upgrading**.
 - MySQL5.6.25 to MySQL5.6.30 means **Updating**, yet MySQL5.6 to MySQL5.7 means **Upgrading**.
 
 Maintenance for RabbitMQ includes the following two tasks.
