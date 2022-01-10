@@ -46,7 +46,7 @@ MySQL 可视化管理参考 [MySQL 管理](/zh/admin-mysql.md) 章节。
 ### MySQL on Docker
 
 MySQL 数据目录 */data/db/mysql/data*  
-MySQL 日志目录: */data/db/mysql/log* 
+MySQL 日志目录: */data/db/mysql/log*  
 MySQL 配置文件：*/data/db/mysql/config/conf.d*  
 
 ### phpMyAdmin
