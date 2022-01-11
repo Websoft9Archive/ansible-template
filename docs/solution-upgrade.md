@@ -32,7 +32,7 @@ This deployment solution is based on Docker and so you can upgrade RabbitMQ by t
 
 1. Use **SFTP** to login Server, modify **APP_VERSION** in the **.env** file of RabbitMQ directory
 
-2. Go to the code-server root directory, then pull new images
+2. Go to the RabbitMQ root directory, then pull new images
    ```
    cd /data/wwwroot/rabbitmq
    docker-compose pull
