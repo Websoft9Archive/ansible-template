@@ -39,7 +39,7 @@ This deployment solution is based on Docker and so you can upgrade RabbitMQ by t
    ```
 3. Delete old container and recreate new container
    ```
-   docker-compose down -v
+   docker-compose down
    docker-compose up -d
    ```
 
