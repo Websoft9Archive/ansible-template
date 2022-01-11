@@ -39,6 +39,6 @@ RabbitMQ 基于 Docker 部署，其升级流程：拉取镜像 > 删除容器 > 
 
 3. 删除旧容器，重新创建 RabbitMQ 容器
     ```
-    docker-compose down -v
+    docker-compose down
     docker-compose up -d
     ```
