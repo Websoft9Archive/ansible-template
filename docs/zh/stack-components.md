@@ -105,11 +105,15 @@ Redis 日志文件： */var/log/redis/redis.log*
 
 通过命令`netstat -tunlp` 看查看相关端口，下面列出可能要用到的端口：
 
-| 名称 | 端口号 | 用途 |  必要性 |
-| --- | --- | --- | --- |
-| TCP | 15672 | 通过 HTTP 访问 RabbitMQ 控制台 | 可选 |
-| TCP | 5672 | epmd | 可选 |
-| TCP | 55672 | Erlang distribution | 可选 |
+| 类型          | 端口号 | 用途                         | 必要性 |
+| ------------- | ------ | ---------------------------- | ------ |
+| Nginx | 80   | Nginx 端口           | 可选   |
+| Konga        | 9001   | 通过 HTTP 访问 Konga 控制台 | 可选   |
+| Postgre | 5432   | Postgre 数据库端口            | 可选   |
+| Kong      | 8000   | Proxy                 | 可选   |
+| Kong      | 8443   | Proxy SSL                 | 可选   |
+| Kong       | 8001  | Admin API                 | 可选   |
+| Kong      | 8444   | Admin API SSL                 | 可选   |
 
 ## 版本号
 
